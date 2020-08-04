@@ -1,0 +1,10 @@
+exclude:
+  - README.md
+  - build.R
+  - index.Rmd
+  - "*.Rproj"
+  - pdf/
+  - extra.Rmd
+  - extra.html
+  - Makefile
+  - setup.sh 
