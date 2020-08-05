@@ -16,10 +16,11 @@ The slides are an intro to setting up and using version control (Git) within the
     - You will mess up
         - It's okay to mess up
             - ... git is stupid
-    - `man git`:
+    - `man git` :
+    
         > GIT(1) &nbsp;&nbsp;&nbsp;&nbsp; Git Manual &nbsp;&nbsp;&nbsp;&nbsp; GIT(1)<br>
-        **NAME**
-            git - the stupid content tracker
+        **NAME**<br>
+        git - the stupid content tracker
 - Getting setup with Git
     - Unix Terminal Emulator (Standing up Development Environment)
     - Git Config username / email
