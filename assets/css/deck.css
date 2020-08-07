@@ -20,3 +20,7 @@
 .rmd-i-2 a:hover {
   color: #acacac;
 }
+
+img.topic {
+    width: 30%;
+}
