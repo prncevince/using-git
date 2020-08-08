@@ -42,7 +42,9 @@ name: theme
 ```
 
 ---
-```{r child="slides/2.Rmd"}
+```{r child="slides/2-preface.Rmd"}
 ```
 
 ---
+
+# Hi

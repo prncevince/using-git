@@ -1,0 +1,19 @@
+class: split-33
+
+.row[.center.vmiddle[
+# .x250.advent-pro[Preface]
+]]
+
+.row[.split-33[
+.column[.vtop-5.hleft-5.font_large.content[
+You will mess up
+- It's okay to mess up 
+  - ... .deep-orange[`git`] is stupid
+]]
+.column[
+.vtop-5.hleft-5.font_large.bg-brown.white.content[
+`man` .deep-orange[`git`] :
+  > GIT(1) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Git Manual &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GIT(1)<br><br>
+  **NAME**<br>
+  .hleft-15[git - the stupid content tracker<br><br>]
+]]]]
