@@ -1,0 +1,29 @@
+class: split-two m1
+
+.column[.content[
+# SSH Config
+### ~/.ssh/config
+
+```bash
+Host github
+  HostName gitlab.com
+  AddKeysToAgent yes
+  PreferredAuthentications publickey
+  VisualHostKey=yes
+  IdentityFile ~/.ssh/id_rsa 
+ 
+Host esgovcloud
+  HostName esgovcloud.com
+  AddKeysToAgent yes
+  PreferredAuthentications publickey
+  VisualHostKey=yes
+  IdentityFile ~/.ssh/id_rsa
+```
+]]
+.column[.content[
+<h1> &nbsp; </h1>
+.center[### Usage]
+`ssh -T esgovcloud`<br>
+`ssh -T github`<br>
+etc ...
+]]

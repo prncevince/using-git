@@ -1,0 +1,19 @@
+# Installing Git & Friends
+
+## Windows OS
+
+- [Git for Windows](https://gitforwindows.org)
+- Unix-like [Terminal Emulator](https://esgovcloud.com/mAndA/savi/blob/master/CONTRIBUTING.md#windows-10)
+  - Use a Windows package manager like [choco](https://chocolatey.org), [scoop](https://scoop.sh), or [winget](https://github.com/microsoft/winget-cli)
+
+## macOS (Unix-like)
+
+- you should already have `git` installed
+- Using [Homebrew](https://brew.sh) to upgrade
+  - `brew install git`
+- You can use Terminal.app ... or something like [iTerm2](https://www.iterm2.com/index.html)
+
+## Linux 
+
+- Different depending on your distro
+- ... you should know how to install packages

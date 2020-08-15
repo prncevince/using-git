@@ -1,0 +1,18 @@
+class: split-two m1
+
+.column[.content[
+# Git Config
+### ~/.gitconfig
+ 
+```bash
+git config --global user.name "First Last"
+git config --global user.email "hi@gmail.com"
+```
+]]
+
+.column[.content[
+# &nbsp;
+### Docs
+[8.1 Customizing Git - Git Configuration](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration)<br>
+`git config --help`
+]]

@@ -1,0 +1,53 @@
+class: nomargin-ul
+
+.pull-left[
+# SSH Keys
+
+### Resources
+- [Connecting to GitHub with SSH](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
+- [GitLab and SSH keys](https://docs.gitlab.com/ee/ssh/README.html)
+
+### Steps
+- Generate an SSH public/private key pair<br>
+\> `ssh-keygen`
+- Start SSH Agent<br>
+\> ``eval `ssh-agent -s` ``
+- Add SSH private key to SSH agent<br>
+\> `ssh-add`
+- Add public key to repository (GitHub/GitLab)<br>
+macOS:<br>
+\> `pbcopy < ~/.ssh/id_rsa.pub`<br>
+Windows:<br>
+\> `cat ~/.ssh/id_rsa.pub | clip`
+- Test connection<br>
+\> `ssh -T esgovcloud.com`
+- Clone private repository<br>
+<code class="remark-inline-code x75">
+\> git clone git@esgovcloud.com:mAndA/clone-me.git
+</code>
+]
+.pull-right[
+### ~/.profile
+
+```bash
+# SSH Agent
+if [ -z "$SSH_AUTH_SOCK" ] ; then
+        eval `ssh-agent -s`
+fi
+
+# Logout
+exit_session() {
+  . ~/.bash_logout
+}
+trap exit_session SIGHUP
+```
+
+### ~/.bash_logout or ~/.zlogout
+
+```bash
+# SSH Agent
+if [ -n "$SSH_AUTH_SOCK" ] ; then
+        eval `ssh-agent -k`
+fi
+```
+]

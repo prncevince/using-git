@@ -21,16 +21,22 @@ The slides are an intro to setting up and using version control (Git) within the
         > GIT(1) &nbsp;&nbsp;&nbsp;&nbsp; Git Manual &nbsp;&nbsp;&nbsp;&nbsp; GIT(1)<br>
         **NAME**<br>
         git - the stupid content tracker
-- Getting setup with Git
+- Setup
+- Installing Git & Friends
     - Unix Terminal Emulator (Standing up Development Environment)
-    - Git Config username / email
-- SSH Key setup
+- SSH Keys
     - Generating Keys
-    - SSH Config
-- Initializing a repo
-    - Adding local git Git Config
-    - Adding a remote repository
-    - Cloning - Starting from scratch
+    - Starting SSH Agent
+    - Adding private key to agent
+    - Adding public key to repository
+    - Testing connection
+- SSH Config
+- Git Config
+    - username / email
+- 2 Methods -  Getting Started
+- Initializing a Repo
+    - Brand New Repo
+    - Preexisting Repo
 - R Project + RStudio + Git setup
 - Concepts
     - [3 trees](https://www.atlassian.com/git/tutorials/undoing-changes/git-reset)

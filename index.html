@@ -48,17 +48,203 @@ class: split-33
 .column[.vtop-5.hleft-5.font_large.content[
 You will mess up
 - It's okay to mess up 
-  - ... .deep-orange[`git`] is stupid
+  - ... &lt;code class="remark-inline-code" style="color: var(--color-deep-orange)"&gt;git&lt;/code&gt; is stupid
 ]]
 .column[
 .vtop-5.hleft-5.font_large.bg-brown.white.content[
-`man` .deep-orange[`git`] :
+`man`&lt;code class="remark-inline-code" style="color: var(--color-deep-orange)"&gt; git&lt;/code&gt; :
   &gt; GIT(1) &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Git Manual &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; GIT(1)&lt;br&gt;&lt;br&gt;
   **NAME**&lt;br&gt;
   .hleft-15[git - the stupid content tracker&lt;br&gt;&lt;br&gt;]
 ]]]]
 
 ---
+
+class: middle center
+
+# .x300.advent-pro[Setup]
+
+---
+
+# Installing Git &amp; Friends
+
+## Windows OS
+
+- [Git for Windows](https://gitforwindows.org)
+- Unix-like [Terminal Emulator](https://esgovcloud.com/mAndA/savi/blob/master/CONTRIBUTING.md#windows-10)
+  - Use a Windows package manager like [choco](https://chocolatey.org), [scoop](https://scoop.sh), or [winget](https://github.com/microsoft/winget-cli)
+
+## macOS (Unix-like)
+
+- you should already have `git` installed
+- Using [Homebrew](https://brew.sh) to upgrade
+  - `brew install git`
+- You can use Terminal.app ... or something like [iTerm2](https://www.iterm2.com/index.html)
+
+## Linux 
+
+- Different depending on your distro
+- ... you should know how to install packages
+
+---
+
+class: nomargin-ul
+
+.pull-left[
+# SSH Keys
+
+### Resources
+- [Connecting to GitHub with SSH](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
+- [GitLab and SSH keys](https://docs.gitlab.com/ee/ssh/README.html)
+
+### Steps
+- Generate an SSH public/private key pair&lt;br&gt;
+\&gt; `ssh-keygen`
+- Start SSH Agent&lt;br&gt;
+\&gt; ``eval `ssh-agent -s` ``
+- Add SSH private key to SSH agent&lt;br&gt;
+\&gt; `ssh-add`
+- Add public key to repository (GitHub/GitLab)&lt;br&gt;
+macOS:&lt;br&gt;
+\&gt; `pbcopy &lt; ~/.ssh/id_rsa.pub`&lt;br&gt;
+Windows:&lt;br&gt;
+\&gt; `cat ~/.ssh/id_rsa.pub | clip`
+- Test connection&lt;br&gt;
+\&gt; `ssh -T esgovcloud.com`
+- Clone private repository&lt;br&gt;
+&lt;code class="remark-inline-code x75"&gt;
+\&gt; git clone git@esgovcloud.com:mAndA/clone-me.git
+&lt;/code&gt;
+]
+.pull-right[
+### ~/.profile
+
+```bash
+# SSH Agent
+if [ -z "$SSH_AUTH_SOCK" ] ; then
+        eval `ssh-agent -s`
+fi
+
+# Logout
+exit_session() {
+  . ~/.bash_logout
+}
+trap exit_session SIGHUP
+```
+
+### ~/.bash_logout or ~/.zlogout
+
+```bash
+# SSH Agent
+if [ -n "$SSH_AUTH_SOCK" ] ; then
+        eval `ssh-agent -k`
+fi
+```
+]
+
+---
+
+class: split-two m1
+
+.column[.content[
+# SSH Config
+### ~/.ssh/config
+
+```bash
+Host github
+  HostName gitlab.com
+  AddKeysToAgent yes
+  PreferredAuthentications publickey
+  VisualHostKey=yes
+  IdentityFile ~/.ssh/id_rsa 
+ 
+Host esgovcloud
+  HostName esgovcloud.com
+  AddKeysToAgent yes
+  PreferredAuthentications publickey
+  VisualHostKey=yes
+  IdentityFile ~/.ssh/id_rsa
+```
+]]
+.column[.content[
+&lt;h1&gt; &amp;nbsp; &lt;/h1&gt;
+.center[### Usage]
+`ssh -T esgovcloud`&lt;br&gt;
+`ssh -T github`&lt;br&gt;
+etc ...
+]]
+
+---
+
+class: split-two m1
+
+.column[.content[
+# Git Config
+### ~/.gitconfig
+ 
+```bash
+git config --global user.name "First Last"
+git config --global user.email "hi@gmail.com"
+```
+]]
+
+.column[.content[
+# &amp;nbsp;
+### Docs
+[8.1 Customizing Git - Git Configuration](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration)&lt;br&gt;
+`git config --help`
+]]
+
+---
+class: split-10 m1 nopadding-h2
+
+.row.center[
+# 2 Methods -  Getting Started
+]
+
+.row.split-two[.column[.content[
+## Brand New Repo
+#### Adding a local git config
+```bash
+git config user.name "First Last"
+git config user.email ""
+```
+#### Adding a remote repository
+```bash
+git remote add origin git@esgovcloud.com:mAndA/clone-me.git
+```
+]]
+.column[.content[
+## Preexisting Repo
+#### Cloning
+]]]
+
+---
+name: resources
+class: nomargin-ul nomargin-h2 nomargin-h4 nopadding-h2
+
+## &lt;center&gt;Presentation Resources&lt;/center&gt;
+
+.pull-left[
+#### Friends of Git
+Windows
+- [Git for Windows](https://gitforwindows.org)
+- [Terminal Emulator](https://esgovcloud.com/mAndA/savi/blob/master/CONTRIBUTING.md#windows-10)
+- [chocolatey](https://chocolatey.org), [scoop](https://scoop.sh), [winget](https://github.com/microsoft/winget-cli)
+
+macOS
+- [Homebrew](https://brew.sh)
+- [iTerm2](https://www.iterm2.com/index.html)
+
+#### SSH Keys
+- [Connecting to GitHub with SSH](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
+- [GitLab and SSH keys](https://docs.gitlab.com/ee/ssh/README.html)
+- [Demo Repo to Clone](https://esgovcloud.com/mAndA/clone-me)
+]
+
+.pull-right[
+
+]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="theme/src/js/remark.min.js"></script>
