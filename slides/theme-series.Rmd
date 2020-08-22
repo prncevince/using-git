@@ -1,0 +1,5 @@
+layout: true
+template: theme
+name: theme
+
+<p class="my-header"><span>Version Control - Using Git</span></p>
