@@ -68,52 +68,13 @@ library(anicon)
 ```
 
 ---
-class: split-10 m1 nopadding-h2
-
-.row.center[
-# 2 Methods -  Getting Started
-]
-
-.row.split-two[.column[.content[
-## Brand New Repo
-#### Adding a local git config
-```bash
-git config user.name "First Last"
-git config user.email ""
+```{r child="slides/8-getting-started.Rmd"}
 ```
-#### Adding a remote repository
-```bash
-git remote add origin git@esgovcloud.com:mAndA/clone-me.git
-```
-]]
-.column[.content[
-## Preexisting Repo
-#### Cloning
-]]]
 
 ---
-name: resources
-class: nomargin-ul nomargin-h2 nomargin-h4 nopadding-h2
+```{r child="slides/9-rproject-rstudio-git.Rmd"}
+```
 
-## <center>Presentation Resources</center>
-
-.pull-left[
-#### Friends of Git
-Windows
-- [Git for Windows](https://gitforwindows.org)
-- [Terminal Emulator](https://esgovcloud.com/mAndA/savi/blob/master/CONTRIBUTING.md#windows-10)
-- [chocolatey](https://chocolatey.org), [scoop](https://scoop.sh), [winget](https://github.com/microsoft/winget-cli)
-
-macOS
-- [Homebrew](https://brew.sh)
-- [iTerm2](https://www.iterm2.com/index.html)
-
-#### SSH Keys
-- [Connecting to GitHub with SSH](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
-- [GitLab and SSH keys](https://docs.gitlab.com/ee/ssh/README.html)
-- [Demo Repo to Clone](https://esgovcloud.com/mAndA/clone-me)
-]
-
-.pull-right[
-
-]
+---
+```{r child="slides/resources.Rmd"}
+```

@@ -1,0 +1,43 @@
+class: split-10 m1 nopadding-h2
+
+.row.center[
+# 2 Methods -  Getting Started
+]
+
+.row.split-two[.column[.content[
+## Brand New Repo
+#### Initialize Repo
+```bash
+git init
+```
+#### Adding a local git config
+```bash
+git config user.name "First Last"
+git config user.email "first.last@perspecta.com"
+```
+#### Adding a remote repository
+```bash
+git remote add origin git@esgovcloud.com:mAndA/your-unique-test-repo.git
+```
+#### Track Files
+```bash
+git add
+```
+#### Commit Changes
+```bash
+git commit -m "track files, first commit!"
+```
+#### Push to Remote Repo
+```bash
+git push -u origin master
+```
+]]
+.column[.content[
+## Preexisting Repo
+#### Cloning
+```bash
+git clone git@esgovcloud.com:mAndA/clone-me.git
+```
+.img-contain[![](../assets/img/clone-button.png)
+]
+]]]

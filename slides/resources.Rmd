@@ -1,0 +1,27 @@
+name: resources
+class: nomargin-ul nomargin-h2 nomargin-h4 nopadding-h2
+
+## <center>Presentation Resources</center>
+
+.pull-left[
+#### [Friends of Git](#4)
+Windows
+- [Git for Windows](https://gitforwindows.org)
+- [Terminal Emulator](https://esgovcloud.com/mAndA/savi/blob/master/CONTRIBUTING.md#windows-10)
+- [chocolatey](https://chocolatey.org), [scoop](https://scoop.sh), [winget](https://github.com/microsoft/winget-cli)
+
+macOS
+- [Homebrew](https://brew.sh)
+- [iTerm2](https://www.iterm2.com/index.html)
+
+#### [SSH Keys](#5)
+- [Connecting to GitHub with SSH](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
+- [GitLab and SSH keys](https://docs.gitlab.com/ee/ssh/README.html)
+
+#### [Getting Started](#8)
+- [Demo Repo to Clone](https://esgovcloud.com/mAndA/clone-me)
+]
+
+.pull-right[
+
+]

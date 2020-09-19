@@ -1,0 +1,5 @@
+class: m1 nosplit
+
+.row[.content[
+# R Project + RStudio + Git setup
+]]
