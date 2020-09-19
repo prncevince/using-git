@@ -38,6 +38,6 @@ git push -u origin master
 ```bash
 git clone git@esgovcloud.com:mAndA/clone-me.git
 ```
-.img-contain[![](../assets/img/clone-button.png)
+.img-contain[![](assets/img/clone-button.png)
 ]
 ]]]
