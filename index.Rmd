@@ -1,5 +1,5 @@
 ---
-title: "Modern M&A - Custom Xaringan Theme"
+title: "Modern M&A - Version Control - Using Git"
 subtitle: "⚔<br/>with xaringan"
 author: "The Authors Names ... just meta-data"
 date: "2019/08/16 (updated: `r Sys.Date()`)"
