@@ -70,11 +70,14 @@ library(anicon)
 ---
 ```{r child="slides/8-getting-started.Rmd"}
 ```
-
+???
+Demo by creating a new repo.
+Then, delete it.
 ---
 ```{r child="slides/9-rproject-rstudio-git.Rmd"}
 ```
-
+???
+Demo with https://esgovcloud.com/mAndA/clone-me.
 ---
 ```{r child="slides/resources.Rmd"}
 ```
