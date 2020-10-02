@@ -20,6 +20,12 @@ macOS
 
 #### [Getting Started](#8)
 - [Demo Repo to Clone](https://esgovcloud.com/mAndA/clone-me)
+
+#### [R Project + RStudio + Git](#9)
+- [Using Projects in R / RStudio](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects)
+
+#### [3 Trees of Git](#10)
+- [](https://www.atlassian.com/git/tutorials/undoing-changes/git-reset)
 ]
 
 .pull-right[

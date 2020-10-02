@@ -1,0 +1,16 @@
+class: m1
+
+# "3 Trees"
+
+Allows Git to keep a timeline of edits. [Resource](https://www.atlassian.com/git/tutorials/undoing-changes/git-reset)
+
+```{r}
+
+```
+
+### Working Directory
+
+### Staging Index
+
+### Commit History / HEAD / Repo
+

@@ -79,5 +79,15 @@ Then, delete it.
 ???
 Demo with https://esgovcloud.com/mAndA/clone-me.
 ---
+```{r child="slodes/10-three-trees.Rmd"}
+```
+
+---
+class: center middle
+
+# .x300.advent-pro[Git or Done]
+
+
+---
 ```{r child="slides/resources.Rmd"}
 ```
