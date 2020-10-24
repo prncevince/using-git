@@ -10,14 +10,17 @@ Keeps a timeline of edits in Git.
 .column[.content[
 ### Working Directory
 
-
+I am editing/changing a file named `10-three-trees.Rmd` in the folder containing a Git repo.
+![](assets/img/three-trees-1.png)
 
 ### Staging Index
 
-
+Next, let's make Git "track" these changes.
+![](assets/img/three-trees-2.png)
 
 ### Commit History / HEAD / Repo
 
-
+Finally, let's "commit" these changes. 
+![](assets/img/three-trees-3.png)
 
 ]]
