@@ -1,16 +1,23 @@
-class: m1
+class: m1 split-two
 
-# "3 Trees"
+.column[.content[
+# <center>"3 Trees"</center>
+Keeps a timeline of edits in Git.
+[Resource](https://www.atlassian.com/git/tutorials/undoing-changes/git-reset)
 
-Allows Git to keep a timeline of edits. [Resource](https://www.atlassian.com/git/tutorials/undoing-changes/git-reset)
-
-```{r}
-
-```
-
+.center[![](assets/img/three-trees-scaled.svg)]
+]]
+.column[.content[
 ### Working Directory
+
+
 
 ### Staging Index
 
+
+
 ### Commit History / HEAD / Repo
 
+
+
+]]

@@ -25,7 +25,7 @@ macOS
 - [Using Projects in R / RStudio](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects)
 
 #### [3 Trees of Git](#10)
-- [](https://www.atlassian.com/git/tutorials/undoing-changes/git-reset)
+- [Git Reset / 3 Trees](https://www.atlassian.com/git/tutorials/undoing-changes/git-reset)
 ]
 
 .pull-right[

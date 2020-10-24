@@ -79,7 +79,7 @@ Then, delete it.
 ???
 Demo with https://esgovcloud.com/mAndA/clone-me.
 ---
-```{r child="slodes/10-three-trees.Rmd"}
+```{r child="slides/10-three-trees.Rmd"}
 ```
 
 ---
