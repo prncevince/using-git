@@ -27,7 +27,7 @@ Windows:<br>
 </code>
 ]
 .pull-right[
-### ~/.profile
+### ~/.profile [~/.bash_profile, ~/.bashrc, ~/.zshrc]
 
 ```bash
 # SSH Agent

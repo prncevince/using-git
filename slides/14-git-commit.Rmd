@@ -1,0 +1,22 @@
+class: m1 split-two
+
+.column[.content[
+# [`git commit`](https://git-scm.com/docs/git-commit)
+Creates an empty Git repository.
+<br>
+Creates directory `./git/` where all data in Git repo is stored.
+<br>
+.center[<img src="assets/img/git-init.png" style="max-width:60%">]
+]]
+.column.split-three[.row[.vmiddle[
+### .center[When to run `git init`?]
+Run when first creating a repo. Not after it's been made.
+]].row[.vmiddle[
+### .center[**WHEN** Though?]
+As soon as you can! The more you procrastinate, the more the never you will use Git!
+]].row[.vmiddle[
+### .center[How do I delete my git repo?]
+Delete the `./git` directory. 
+<br>
+e.g. `rm -rf .git`
+]]]

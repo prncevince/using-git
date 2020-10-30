@@ -1,0 +1,8 @@
+class: m1 split-two
+
+.column[.content[
+
+]]
+.column[.content[
+
+]]

@@ -1,3 +1,0 @@
-class: middle center
-
-# .x300.advent-pro[Setup]

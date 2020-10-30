@@ -12,3 +12,8 @@ p.my-header span {
 img.topic {
     width: 30%;
 }
+
+a > .remark-inline-code {
+  color: #FF5722;
+}
+

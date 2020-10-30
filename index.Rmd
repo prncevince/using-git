@@ -48,8 +48,9 @@ library(anicon)
 ```
 
 ---
-```{r child="slides/3-setup.Rmd"}
-```
+class: middle center
+
+# .x300.advent-pro[Setup]
 
 ---
 ```{r child="slides/4-git-and-friends.Rmd"}
@@ -78,36 +79,76 @@ Then, delete it.
 ```
 ???
 Demo with https://esgovcloud.com/mAndA/clone-me.
+
 ---
-```{r child="slides/10-three-trees.Rmd"}
+class: middle center
+
+# .x300.advent-pro[Concepts & `Commands`]
+
+---
+```{r child="slides/11-three-trees.Rmd"}
 ```
 
 ---
-```{r child="slides/11-git-init.Rmd"}
+```{r child="slides/12-git-init.Rmd"}
 ```
 
 ---
-```{r child="slides/12-git-add.Rmd"}
+```{r child="slides/13-git-add.Rmd"}
 ```
 
 ---
-```{r child="slides/13-git-commit.Rmd"}
+```{r child="slides/14-git-commit.Rmd"}
 ```
 
 ---
-```{r child="slides/14-git-pull.Rmd"}
+```{r child="slides/15-git-pull.Rmd"}
 ```
 
 ---
-```{r child="slides/15-git-reset.Rmd"}
+```{r child="slides/16-git-push.Rmd"}
 ```
 
 ---
-```{r child="slides/16-git-revert.Rmd"}
+```{r child="slides/17-git-reset.Rmd"}
 ```
 
 ---
-```{r child="slides/17-git-tag.Rmd"}
+```{r child="slides/18-git-revert.Rmd"}
+```
+
+---
+```{r child="slides/19-branching.Rmd"}
+```
+
+---
+```{r child="slides/20-git-checkout.Rmd"}
+```
+
+---
+```{r childe="slides/21-releases.Rmd"}
+```
+
+---
+```{r child="slides/22-git-tag.Rmd"}
+```
+
+---
+class: middle center
+
+# .x500.advent-pro[LARGE] .x200.advent-pro-ital[Files]
+
+---
+```{r child="slides/24-git-lfs.Rmd"}
+```
+
+---
+class: middle center
+
+# .x300.advent-pro[R / Git Project Template]
+
+---
+```{r child="slides/26-project-template.Rmd"}
 ```
 
 ---
@@ -115,7 +156,6 @@ Demo with https://esgovcloud.com/mAndA/clone-me.
 class: center middle
 
 # .x300.advent-pro[Git or Done]
-
 
 ---
 ```{r child="slides/resources.Rmd"}
