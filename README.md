@@ -50,7 +50,7 @@ The slides are an intro to setting up and using version control (Git) within the
     - `git reset`
     - `git revert`
     - `git tag`
-    - large file storage
+    - Git Large File Storage (LFS)
 - Demo project w/ common tools for different types of R projects
     - R Project
     - renv

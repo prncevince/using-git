@@ -83,6 +83,35 @@ Demo with https://esgovcloud.com/mAndA/clone-me.
 ```
 
 ---
+```{r child="slides/11-git-init.Rmd"}
+```
+
+---
+```{r child="slides/12-git-add.Rmd"}
+```
+
+---
+```{r child="slides/13-git-commit.Rmd"}
+```
+
+---
+```{r child="slides/14-git-pull.Rmd"}
+```
+
+---
+```{r child="slides/15-git-reset.Rmd"}
+```
+
+---
+```{r child="slides/16-git-revert.Rmd"}
+```
+
+---
+```{r child="slides/17-git-tag.Rmd"}
+```
+
+---
+
 class: center middle
 
 # .x300.advent-pro[Git or Done]
