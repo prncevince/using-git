@@ -4,6 +4,7 @@ class: nomargin-ul nomargin-h2 nomargin-h4 nopadding-h2
 ## <center>Presentation Resources</center>
 
 .pull-left[
+### [Setup](#3)
 #### [Friends of Git](#4)
 Windows
 - [Git for Windows](https://gitforwindows.org)
@@ -23,11 +24,23 @@ macOS
 
 #### [R Project + RStudio + Git](#9)
 - [Using Projects in R / RStudio](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects)
-
-#### [3 Trees of Git](#10)
-- [Git Reset / 3 Trees](https://www.atlassian.com/git/tutorials/undoing-changes/git-reset)
 ]
 
 .pull-right[
+#### [3 Trees of Git](#11)
+- [Git Reset / 3 Trees](https://www.atlassian.com/git/tutorials/undoing-changes/git-reset)
 
+#### Git Commands
+- [git clone](https://git-scm.com/docs/git-clone)
+- [git init](https://git-scm.com/docs/git-init)
+- [git remote](https://git-scm.com/docs/git-remote)
+- [git add](https://git-scm.com/docs/git-add)
+- [git commit](https://git-scm.com/docs/git-commit)
+- [git pull](https://git-scm.com/docs/git-pull)
+- [git push](https://git-scm.com/docs/git-push)
+- [git reset](https://git-scm.com/docs/git-reset)
+- [git revert](https://git-scm.com/docs/git-revert)
+- [git branch](https://git-scm.com/docs/git-branch)
+- [git checkout](https://git-scm.com/docs/git-checkout)
+- [git tag](https://git-scm.com/docs/git-tag)
 ]
