@@ -1,5 +1,5 @@
 name: resources
-class: nomargin-ul nomargin-h2 nomargin-h4 nopadding-h2
+class: nomargin-ul nomargin-h2 nomargin-h3 nomargin-h4 nopadding-h2
 
 ## <center>Presentation Resources</center>
 
@@ -36,6 +36,7 @@ macOS
 - [git remote](https://git-scm.com/docs/git-remote)
 - [git add](https://git-scm.com/docs/git-add)
 - [git commit](https://git-scm.com/docs/git-commit)
+- [git log](https://git-scm.com/docs/git-log)
 - [git pull](https://git-scm.com/docs/git-pull)
 - [git push](https://git-scm.com/docs/git-push)
 - [git reset](https://git-scm.com/docs/git-reset)
@@ -43,4 +44,8 @@ macOS
 - [git branch](https://git-scm.com/docs/git-branch)
 - [git checkout](https://git-scm.com/docs/git-checkout)
 - [git tag](https://git-scm.com/docs/git-tag)
+
+#### Git Extras
+- [gitignore](https://git-scm.com/docs/gitignore)
+- [merge conflicts](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging#_basic_merge_conflicts)
 ]

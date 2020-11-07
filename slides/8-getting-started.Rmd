@@ -1,4 +1,4 @@
-class: split-10 m1 nopadding-h2
+class: split-10 m1 nopadding-h2 nomargin-pre nomargin-h4
 
 .row.center[
 # 2 Methods -  Getting Started

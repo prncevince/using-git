@@ -1,0 +1,30 @@
+digraph {
+
+graph [layout = 'dot',
+       rankdir = 'LR',
+       outputorder = 'edgesfirst',
+       bgcolor = 'white']
+
+node [fontname = 'Helvetica',
+      fontsize = '10',
+      shape = 'circle',
+      fixedsize = 'true',
+      width = '0.5',
+      style = 'filled',
+      fillcolor = 'aliceblue',
+      color = 'gray70',
+      fontcolor = 'gray50']
+
+edge [fontname = 'Helvetica',
+     fontsize = '8',
+     len = '1.5',
+     color = 'gray80',
+     arrowsize = '0.5']
+
+  '1' [label = 'Commit 
+(or Stash)', fixedsize = 'false', shape = 'box', fillcolor = 'firebrick', fontcolor = 'white', style = 'filled,rounded'] 
+  '2' [label = 'Pull', fixedsize = 'false', shape = 'box', fillcolor = 'goldenrod', fontcolor = 'white', style = 'filled,rounded'] 
+  '3' [label = 'Push', fixedsize = 'false', shape = 'box', fillcolor = 'turquoise', fontcolor = 'white', style = 'filled,rounded'] 
+  '1'->'2' 
+  '2'->'3' 
+}

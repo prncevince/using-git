@@ -2,21 +2,19 @@ class: m1 split-two
 
 .column[.content[
 # [`git commit`](https://git-scm.com/docs/git-commit)
-Creates an empty Git repository.
+Records changes ("modifi.x75[e̶d̶]"-cations) to tracked files.
 <br>
-Creates directory `./git/` where all data in Git repo is stored.
+Logs them as a "commit" in Git repo. 
 <br>
-.center[<img src="assets/img/git-init.png" style="max-width:60%">]
+.center[<img src="assets/img/git-commit.png" style="max-width:73.5%">]
 ]]
-.column.split-three[.row[.vmiddle[
-### .center[When to run `git init`?]
-Run when first creating a repo. Not after it's been made.
-]].row[.vmiddle[
-### .center[**WHEN** Though?]
-As soon as you can! The more you procrastinate, the more the never you will use Git!
-]].row[.vmiddle[
-### .center[How do I delete my git repo?]
-Delete the `./git` directory. 
+.column[.content[
+### .center[When to run `git commit`?]
+Commit early & often. The more you commit, the easier it is to track growth/history.
+### .center[How do I view my commits?]
+With `git log`. [Reference](https://git-scm.com/docs/git-log)
+### .center[Can I make my commits pretty?]
+Yes! `git log --graph --decorate --all` Example:
 <br>
-e.g. `rm -rf .git`
-]]]
+.center[<img src="assets/img/git-log.png" style="max-width:100%">]
+]]

@@ -2,21 +2,26 @@ class: m1 split-two
 
 .column[.content[
 # [`git push`](https://git-scm.com/docs/git-push)
-Creates an empty Git repository.
+Updates remote repository branches/tags (refs).
 <br>
-Creates directory `./git/` where all data in Git repo is stored.
+Pushing a brand new Git repo:
 <br>
-.center[<img src="assets/img/git-init.png" style="max-width:60%">]
+.center[<img src="assets/img/git-push-new.png" style="max-width:95%">]
 ]]
-.column.split-three[.row[.vmiddle[
-### .center[When to run `git init`?]
-Run when first creating a repo. Not after it's been made.
-]].row[.vmiddle[
+.column.split-20[.row[.vmiddle[
+### .center[When to run `git push`?]
+Run when you want ***others*** to access your work.
+]].row.split-30[.row[.vtop-0[
 ### .center[**WHEN** Though?]
-As soon as you can! The more you procrastinate, the more the never you will use Git!
-]].row[.vmiddle[
-### .center[How do I delete my git repo?]
-Delete the `./git` directory. 
-<br>
-e.g. `rm -rf .git`
+3 basic scenarios:
+
+1. Brand new remote repo (left) 
+2. After cloning (below left)
+3. After pulling (below right)
+]].row.split-two[
+.column[
+![](assets/img/git-push-clone.png)]
+.column[
+![](assets/img/git-push-pull.png)
+<img src="assets/img/git-push-pull-log.png" style="max-width:45%">]
 ]]]

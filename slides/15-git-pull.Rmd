@@ -2,21 +2,23 @@ class: m1 split-two
 
 .column[.content[
 # [`git pull`](https://git-scm.com/docs/git-pull)
-Creates an empty Git repository.
+Adds changes from remote repo into local repo.
 <br>
-Creates directory `./git/` where all data in Git repo is stored.
+Under the hood, this runs [`git fetch`](https://git-scm.com/docs/git-fetch) then [`git merge`](https://git-scm.com/docs/git-merge)
 <br>
-.center[<img src="assets/img/git-init.png" style="max-width:60%">]
+.center[<img src="assets/img/git-pull.png" style="max-width:77.5%">]
 ]]
-.column.split-three[.row[.vmiddle[
-### .center[When to run `git init`?]
-Run when first creating a repo. Not after it's been made.
-]].row[.vmiddle[
+.column.split-20[.row[.vmiddle[
+### .center[When to run `git pull`?]
+Run when you want other peoples' changes.
+]].row.split-50[.row[.vmiddle[
 ### .center[**WHEN** Though?]
-As soon as you can! The more you procrastinate, the more the never you will use Git!
-]].row[.vmiddle[
-### .center[How do I delete my git repo?]
-Delete the `./git` directory. 
+To keep (not ***lose***) your working directory changes, `commit` all changes 1st. `Pull` ***after***.
 <br>
-e.g. `rm -rf .git`
+However, committing **MIGHT** lead to [merge conflicts](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging#_basic_merge_conflicts), so `git pull` wisely.
+<br>
+[`git stash`](https://git-scm.com/docs/git-stash) can be used as a work around.
+]].row[
+### .center[A good workflow/convention]
+.center[![](assets/img/git-workflow-scaled.svg)]
 ]]]

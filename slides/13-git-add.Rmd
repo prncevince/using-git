@@ -2,21 +2,23 @@ class: m1 split-two
 
 .column[.content[
 # [`git add`](https://git-scm.com/docs/git-add)
-Creates an empty Git repository.
+Adds new files to the staging index.
 <br>
-Creates directory `./git/` where all data in Git repo is stored.
+Once added, Git tracks changes ("modifie̶d̶"-cations) to these files. These changes can be committed.
 <br>
-.center[<img src="assets/img/git-init.png" style="max-width:60%">]
+.center[<img src="assets/img/git-add.png" style="max-width:100%">]
 ]]
-.column.split-three[.row[.vmiddle[
-### .center[When to run `git init`?]
-Run when first creating a repo. Not after it's been made.
-]].row[.vmiddle[
-### .center[**WHEN** Though?]
-As soon as you can! The more you procrastinate, the more the never you will use Git!
-]].row[.vmiddle[
-### .center[How do I delete my git repo?]
-Delete the `./git` directory. 
+.column[.content[
+### .center[When to run `git add`?]
+Run when you add new files to your repo.
+### .center[How do I `add` an empty folder?]
+Create an empty hidden file in your empty folder!
 <br>
-e.g. `rm -rf .git`
-]]]
+e.g. `touch my-empty-folder/.keep`
+<br>
+^ It'll show up on Git-Hub/Lab 🎉🥳!
+### .center[How do I **IGNORE** files/folders?]
+Create a `.gitignore` & add paths to it. [Reference](https://git-scm.com/docs/gitignore)
+<br>
+.center[<img src="assets/img/gitignore.png" style="max-width:100%">]
+]]
