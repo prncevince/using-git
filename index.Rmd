@@ -20,6 +20,7 @@ output:
       navigation:
         scroll: false
     anchor_sections: false
+    
 ---
 
 ```{r setup, include=FALSE}
@@ -28,7 +29,7 @@ knitr::opts_chunk$set(fig.path = "assets/img/")
 xaringanExtra::use_tile_view()
 htmltools::tagList(
   htmltools::htmlDependency(
-    src = "theme/usr/js", script = "tile-view-toggle.js", 
+    src = "theme/usr/js", script = "tile-view-toggle.js",
     version = "0.1.0", name = 'tile-view-toggle'
   )
 )
