@@ -2,4 +2,4 @@ layout: true
 template: theme
 name: theme
 
-<p class="my-header"><span>Version Control - Using Git</span></p>
+<p class="my-header" id="my-header"><span>Version Control - Using Git</span></p>

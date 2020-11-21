@@ -24,7 +24,13 @@ output:
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(fig.path = "assets/img/")
-library(anicon)
+xaringanExtra::use_tile_view()
+htmltools::tagList(
+  htmltools::htmlDependency(
+    src = "theme/usr/js", script = "tile-view-toggle.js", 
+    version = "0.1.0", name = 'tile-view-toggle'
+  )
+)
 ```
 
 ```{asis notes, include=FALSE}
