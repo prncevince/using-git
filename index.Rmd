@@ -19,6 +19,7 @@ output:
       countIncrementalSlides: false
       navigation:
         scroll: false
+    anchor_sections: false
 ---
 
 ```{r setup, include=FALSE}
