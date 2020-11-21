@@ -72,18 +72,6 @@
       "Repository": "CRAN",
       "Hash": "3c172c3eba3972c896b73361bfa323d0"
     },
-    "anicon": {
-      "Package": "anicon",
-      "Version": "0.1.0",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteUsername": "emitanaka",
-      "RemoteRepo": "anicon",
-      "RemoteRef": "master",
-      "RemoteSha": "0b756dfd9792c3f67d48fb8aeb7d8a94a0768ba6",
-      "Hash": "49ec03285f02e3c05bdafadf62df49e8"
-    },
     "askpass": {
       "Package": "askpass",
       "Version": "1.1",
@@ -294,18 +282,6 @@
       "Repository": "CRAN",
       "Hash": "7146fea4685b4252ebf478978c75f597"
     },
-    "icon": {
-      "Package": "icon",
-      "Version": "0.1.0",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteUsername": "ropenscilabs",
-      "RemoteRepo": "icon",
-      "RemoteRef": "master",
-      "RemoteSha": "a5bc1cc928b15a5296b06f66faa9e08264ad4064",
-      "Hash": "0f9218d43ae89b113feba53cafef611f"
-    },
     "igraph": {
       "Package": "igraph",
       "Version": "1.2.5",
@@ -511,10 +487,15 @@
     },
     "rmarkdown": {
       "Package": "rmarkdown",
-      "Version": "2.3",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "202260e1b2c410edc086d5b8f1ed946e"
+      "Version": "2.5.3",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "rstudio",
+      "RemoteRepo": "rmarkdown",
+      "RemoteRef": "master",
+      "RemoteSha": "bb7d9525a6939d98d344268801ab1eccbd583a41",
+      "Hash": "479279b5a99610deaa37105f4b4ed299"
     },
     "rprojroot": {
       "Package": "rprojroot",
@@ -529,6 +510,13 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "33a5b27a03da82ac4b1d43268f80088a"
+    },
+    "rsvg": {
+      "Package": "rsvg",
+      "Version": "2.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "f3d32ee70ee9e5ca65b06ee61b4ce813"
     },
     "rvest": {
       "Package": "rvest",
@@ -621,6 +609,13 @@
       "Repository": "CRAN",
       "Hash": "4a5081acfb7b81a572e4384a7aaf2af1"
     },
+    "uuid": {
+      "Package": "uuid",
+      "Version": "0.1-4",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "e4169eb989a5d03ccb6b628cad1b1b50"
+    },
     "vctrs": {
       "Package": "vctrs",
       "Version": "0.3.4",
@@ -663,12 +658,24 @@
       "Repository": "CRAN",
       "Hash": "7168ed8f41f3597c6c570477c0d0bf15"
     },
+    "xaringanExtra": {
+      "Package": "xaringanExtra",
+      "Version": "0.2.4",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "gadenbuie",
+      "RemoteRepo": "xaringanExtra",
+      "RemoteRef": "master",
+      "RemoteSha": "aebe20a761c018687a7dc8e5c92bdab64b97de00",
+      "Hash": "5cadd93d92de75afb212723191ec54b9"
+    },
     "xfun": {
       "Package": "xfun",
-      "Version": "0.13",
+      "Version": "0.19",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "3c1eeacd705ff1695db94bfd443b8a84"
+      "Hash": "a42372606cb76f34da9d090326e9f955"
     },
     "xml2": {
       "Package": "xml2",
