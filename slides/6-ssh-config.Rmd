@@ -5,15 +5,15 @@ class: split-two m1
 ### .center[~/.ssh/config]
 
 ```bash
-Host github
-  HostName gitlab.com
+Host github.com github
+  HostName gitlub.com
   User git
   IdentityFile ~/.ssh/id_rsa 
   PreferredAuthentications publickey
   AddKeysToAgent yes
   VisualHostKey yes
  
-Host esgovcloud
+Host esgovcloud.com esgovcloud
   HostName esgovcloud.com
   User git
   IdentityFile ~/.ssh/id_rsa 
