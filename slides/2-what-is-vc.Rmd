@@ -1,0 +1,16 @@
+class: split-25
+
+.row[.left.vtop-0[
+# .x250.advent-pro[What is VERSION CONTROL?]
+]]
+
+.row[.split-two[
+.column[.vmiddle.padding-left-5.padding-top-5.font_large.nooverflow.content[
+The practice of tracking and managing changes to software code.
+<br><br>
+Version control systems (e.g. [Git](https://git-scm.com)) are tools that help software teams manage changes to source code.
+]]
+.column[
+.bg-deep-orange.center.hleft-5.content[
+<img style="max-width:77%" src="assets/img/dvcs.png">
+]]]]
