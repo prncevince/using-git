@@ -32,7 +32,7 @@ htmltools::tagList(
     src = "theme/usr/js", script = "tile-view-toggle.js",
     version = "0.1.0", name = 'tile-view-toggle'
   )
-)
+) 
 ```
 
 ```{asis notes, include=FALSE}
