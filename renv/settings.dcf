@@ -1,0 +1,7 @@
+external.libraries:
+ignored.packages: remotes, rstudioapi, later
+package.dependency.fields: Imports, Depends, LinkingTo
+r.version: 3.6
+snapshot.type: implicit
+use.cache: TRUE
+vcs.ignore.library: TRUE

@@ -1,0 +1,27 @@
+class: m1 split-two
+
+.column[.content[
+# [`git reset`](https://git-scm.com/docs/git-reset)
+Resets HEAD to the state that you tell it to.
+<br>
+.center[<img src="assets/img/git-reset-1.png" style="">]
+.center[<img src="assets/img/git-reset-2.png" style="">]
+]]
+.column.split-20[.row[.vmiddle[
+### .center[When to run `git reset`?]
+Run when you have made personal oopsies.
+]].row[
+### .center[**WHEN** Though?]
+- When you want to undo the latest commit message.
+  - `git reset --soft HEAD~1` (previous commit) (top left)
+- When you want to throw out additions to the index, e.g. you ran `git add .` by accident
+  - `git reset` (runs `git reset --mixed` as default) (mid top left)
+- When you want to discard all modifications in working directory/tree
+  - `git reset --hard` or `git reset --hard HEAD` (adds `HEAD` by default) (mid bottom left)
+- When you want to throw out commits (**forever**)
+  - `git reset --hard HEAD~1` (previous commit) (bottom left)
+
+.x75[What is this `HEAD~1` notation?
+- `~n` means $n^{th}$ generate of the named commit. So `HEAD~1` refers to the commit before the latest (HEAD).
+- You can Boggle your brains at [`man gitrevisions`](https://git-scm.com/docs/gitrevisions) or <br> [Git Tools - Revision Selection](https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection)
+]]]

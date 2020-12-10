@@ -95,7 +95,7 @@ Demo with https://esgovcloud.com/mAndA/clone-me.
 ---
 class: middle center
 
-# .x300.advent-pro[Concepts & `Commands`]
+# .x300.advent-pro[Basic Concepts & `Commands`]
 
 ---
 ```{r child="slides/12-three-trees.Rmd"}
@@ -122,27 +122,41 @@ class: middle center
 ```
 
 ---
-```{r child="slides/18-git-reset.Rmd"}
+class: middle center
+
+# .x300.advent-pro[Undoing Things]
+
+---
+```{r child="slides/19-git-reset.Rmd"}
 ```
 
 ---
-```{r child="slides/19-git-revert.Rmd"}
+```{r child="slides/20-git-revert.Rmd"}
 ```
 
 ---
-```{r child="slides/20-branching.Rmd"}
+```{r child="slides/21-git-rm.Rmd"}
 ```
 
 ---
-```{r child="slides/21-git-checkout.Rmd"}
+class: middle center
+
+# .x300.advent-pro[Development Operations]
+
+---
+```{r child="slides/23-branching.Rmd"}
 ```
 
 ---
-```{r childe="slides/22-releases.Rmd"}
+```{r child="slides/24-git-checkout.Rmd"}
 ```
 
 ---
-```{r child="slides/23-git-tag.Rmd"}
+```{r childe="slides/25-releases.Rmd"}
+```
+
+---
+```{r child="slides/26-git-tag.Rmd"}
 ```
 
 ---
@@ -151,8 +165,14 @@ class: middle center
 # .x500.advent-pro[LARGE] .x200.advent-pro-ital[Files]
 
 ---
-```{r child="slides/25-git-lfs.Rmd"}
+```{r child="slides/28-git-lfs.Rmd"}
 ```
+
+
+---
+```{r child="slides/29-extras-aliases.Rmd"}
+```
+
 
 ---
 class: middle center
@@ -160,7 +180,7 @@ class: middle center
 # .x300.advent-pro[R / Git Project Template]
 
 ---
-```{r child="slides/27-project-template.Rmd"}
+```{r child="slides/31-project-template.Rmd"}
 ```
 
 ---

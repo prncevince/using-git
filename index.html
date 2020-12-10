@@ -245,7 +245,6 @@ git init
 ```
 #### Adding a local git config
 ```bash
-git config user.name "First Last"
 git config user.email "first.last@perspecta.com"
 ```
 #### Adding a remote repository
@@ -299,7 +298,7 @@ Demo with https://esgovcloud.com/mAndA/clone-me.
 ---
 class: middle center
 
-# .x300.advent-pro[Concepts &amp; `Commands`]
+# .x300.advent-pro[Basic Concepts &amp; `Commands`]
 
 ---
 
@@ -398,7 +397,7 @@ Logs them as a "commit" in Git repo.
 ### .center[When to run `git commit`?]
 Commit early &amp; often. The more you commit, the easier it is to track growth/history.
 ### .center[How do I view my commits?]
-With `git log`. [Reference](https://git-scm.com/docs/git-log)
+.center[With [`git log`](https://git-scm.com/docs/git-log).]
 ### .center[Can I make my commits pretty?]
 Yes! `git log --graph --decorate --all` Example:
 &lt;br&gt;
@@ -449,8 +448,7 @@ Pushing a brand new Git repo:
 Run when you want ***others*** to access your work.
 ]].row.split-30[.row[.vtop-0[
 ### .center[**WHEN** Though?]
-3 basic scenarios:
-
+basic scenarios:
 1. Brand new remote repo (left) 
 2. After cloning (below left)
 3. After pulling (below right)
@@ -461,6 +459,61 @@ Run when you want ***others*** to access your work.
 ![](assets/img/git-push-pull.png)
 &lt;img src="assets/img/git-push-pull-log.png" style="max-width:45%"&gt;]
 ]]]
+
+---
+class: middle center
+
+# .x300.advent-pro[Undoing Things]
+
+---
+
+class: m1 split-two
+
+.column[.content[
+# [`git reset`](https://git-scm.com/docs/git-reset)
+Resets HEAD to the state that you tell it to.
+&lt;br&gt;
+.center[&lt;img src="assets/img/git-reset-1.png" style=""&gt;]
+.center[&lt;img src="assets/img/git-reset-2.png" style=""&gt;]
+]]
+.column.split-20[.row[.vmiddle[
+### .center[When to run `git reset`?]
+Run when you have made personal oopsies.
+]].row[
+### .center[**WHEN** Though?]
+- When you want to undo the latest commit message.
+  - `git reset --soft HEAD~1` (previous commit) (top left)
+- When you want to throw out additions to the index, e.g. you ran `git add .` by accident
+  - `git reset` (runs `git reset --mixed` as default) (mid top left)
+- When you want to discard all modifications in working directory/tree
+  - `git reset --hard` or `git reset --hard HEAD` (adds `HEAD` by default) (mid bottom left)
+- When you want to throw out commits (**forever**)
+  - `git reset --hard HEAD~1` (previous commit) (bottom left)
+
+.x75[What is this `HEAD~1` notation?
+- `~n` means `\(n^{th}\)` generate of the named commit. So `HEAD~1` refers to the commit before the latest (HEAD).
+- You can Boggle your brains at [`man gitrevisions`](https://git-scm.com/docs/gitrevisions) or &lt;br&gt; [Git Tools - Revision Selection](https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection)
+]]]
+
+---
+
+class: m1 split-two
+
+.column[.content[
+# [`git revert`](https://git-scm.com/docs/git-revert)
+Undos commits &amp; records new ones with the "fix"!
+&lt;br&gt;
+.center[&lt;img src="assets/img/git-revert.png" style=""&gt;]
+]]
+.column.split-20[.row[.vmiddle[
+### .center[When to run `git revert`?]
+Run when you need to undo a commit.
+]].row[
+### .center[**WHEN** Though?]
+When you find a bug or small issue introduced by a commit. 
+&lt;br&gt;
+**Note**: this can easily lead to merge conflicts.
+]]
 
 ---
 
@@ -488,29 +541,9 @@ e.g. `rm -rf .git`
 ]]]
 
 ---
+class: middle center
 
-class: m1 split-two
-
-.column[.content[
-# [`git revert`](https://git-scm.com/docs/git-revert)
-Creates an empty Git repository.
-&lt;br&gt;
-Creates directory `./git/` where all data in Git repo is stored.
-&lt;br&gt;
-.center[&lt;img src="assets/img/git-init.png" style="max-width:60%"&gt;]
-]]
-.column.split-three[.row[.vmiddle[
-### .center[When to run `git init`?]
-Run when first creating a repo. Not after it's been made.
-]].row[.vmiddle[
-### .center[**WHEN** Though?]
-As soon as you can! The more you procrastinate, the more the never you will use Git!
-]].row[.vmiddle[
-### .center[How do I delete my git repo?]
-Delete the `./git` directory. 
-&lt;br&gt;
-e.g. `rm -rf .git`
-]]]
+# .x300.advent-pro[Development Operations]
 
 ---
 
@@ -584,6 +617,22 @@ class: m1 split-two
 
 ]]
 
+
+---
+
+class: m1 split-two
+
+.column[.content[
+
+- https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git
+- https://github.com/tj/git-extras 
+
+]]
+.column[.content[
+
+]]
+
+
 ---
 class: middle center
 
@@ -651,6 +700,7 @@ macOS
 - [git push](https://git-scm.com/docs/git-push)
 - [git reset](https://git-scm.com/docs/git-reset)
 - [git revert](https://git-scm.com/docs/git-revert)
+- [git rm](https://git-scm.com/docs/git-rm)
 - [git branch](https://git-scm.com/docs/git-branch)
 - [git checkout](https://git-scm.com/docs/git-checkout)
 - [git tag](https://git-scm.com/docs/git-tag)
@@ -658,6 +708,8 @@ macOS
 #### Git Extras
 - [gitignore](https://git-scm.com/docs/gitignore)
 - [merge conflicts](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging#_basic_merge_conflicts)
+- [Oh My Zsh Git Plugin Aliases](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git)
+- [Git Extras](https://github.com/tj/git-extras)
 ]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>

@@ -1,0 +1,17 @@
+class: m1 split-two
+
+.column[.content[
+# [`git revert`](https://git-scm.com/docs/git-revert)
+Undos commits & records new ones with the "fix"!
+<br>
+.center[<img src="assets/img/git-revert.png" style="">]
+]]
+.column.split-20[.row[.vmiddle[
+### .center[When to run `git revert`?]
+Run when you need to undo a commit.
+]].row[
+### .center[**WHEN** Though?]
+When you find a bug or small issue introduced by a commit. 
+<br>
+**Note**: this can easily lead to merge conflicts.
+]]

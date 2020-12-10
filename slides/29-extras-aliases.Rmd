@@ -1,0 +1,11 @@
+class: m1 split-two
+
+.column[.content[
+
+- https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git
+- https://github.com/tj/git-extras 
+
+]]
+.column[.content[
+
+]]

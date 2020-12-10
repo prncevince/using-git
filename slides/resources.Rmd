@@ -41,6 +41,7 @@ macOS
 - [git push](https://git-scm.com/docs/git-push)
 - [git reset](https://git-scm.com/docs/git-reset)
 - [git revert](https://git-scm.com/docs/git-revert)
+- [git rm](https://git-scm.com/docs/git-rm)
 - [git branch](https://git-scm.com/docs/git-branch)
 - [git checkout](https://git-scm.com/docs/git-checkout)
 - [git tag](https://git-scm.com/docs/git-tag)
@@ -48,4 +49,6 @@ macOS
 #### Git Extras
 - [gitignore](https://git-scm.com/docs/gitignore)
 - [merge conflicts](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging#_basic_merge_conflicts)
+- [Oh My Zsh Git Plugin Aliases](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git)
+- [Git Extras](https://github.com/tj/git-extras)
 ]

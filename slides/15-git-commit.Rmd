@@ -12,7 +12,7 @@ Logs them as a "commit" in Git repo.
 ### .center[When to run `git commit`?]
 Commit early & often. The more you commit, the easier it is to track growth/history.
 ### .center[How do I view my commits?]
-With `git log`. [Reference](https://git-scm.com/docs/git-log)
+.center[With [`git log`](https://git-scm.com/docs/git-log).]
 ### .center[Can I make my commits pretty?]
 Yes! `git log --graph --decorate --all` Example:
 <br>

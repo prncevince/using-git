@@ -13,8 +13,7 @@ Pushing a brand new Git repo:
 Run when you want ***others*** to access your work.
 ]].row.split-30[.row[.vtop-0[
 ### .center[**WHEN** Though?]
-3 basic scenarios:
-
+basic scenarios:
 1. Brand new remote repo (left) 
 2. After cloning (below left)
 3. After pulling (below right)

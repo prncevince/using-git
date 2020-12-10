@@ -12,7 +12,6 @@ git init
 ```
 #### Adding a local git config
 ```bash
-git config user.name "First Last"
 git config user.email "first.last@perspecta.com"
 ```
 #### Adding a remote repository
