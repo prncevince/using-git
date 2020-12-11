@@ -6,6 +6,7 @@ knit: $(GENERATED_FILES)
 
 .knit-auto: $(GENERATED_FILES)
 	git commit -am "auto knit slides"
+	touch .knit-auto
 
 all: .knit-auto build deploy cleandist
 
