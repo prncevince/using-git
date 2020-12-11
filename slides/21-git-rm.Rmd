@@ -1,22 +1,17 @@
 class: m1 split-two
 
 .column[.content[
-# [`git reset`](https://git-scm.com/docs/git-reset)
-Creates an empty Git repository.
+# [`git rm`](https://git-scm.com/docs/git-rm)
+Removes files from the Working Tree & the Index. 
 <br>
-Creates directory `./git/` where all data in Git repo is stored.
-<br>
-.center[<img src="assets/img/git-init.png" style="max-width:60%">]
+.center[<img src="assets/img/git-rm.png" style="">]
 ]]
-.column.split-three[.row[.vmiddle[
-### .center[When to run `git init`?]
-Run when first creating a repo. Not after it's been made.
-]].row[.vmiddle[
+.column.split-20[.row[.vbottom-0[
+### .center[When to run `git rm`?]
+Run when you've tracked files with Git that you didn't want to (yet).
+]].row[
 ### .center[**WHEN** Though?]
-As soon as you can! The more you procrastinate, the more the never you will use Git!
-]].row[.vmiddle[
-### .center[How do I delete my git repo?]
-Delete the `./git` directory. 
-<br>
-e.g. `rm -rf .git`
-]]]
+You ran a `git add` on your really large data file (oops).
+<br><br>
+**Note**: not a silver bullet, git still has your data stored in its history *if* you already committed it. In which case, a `git reset` or creating a new repo may be desired.
+]]

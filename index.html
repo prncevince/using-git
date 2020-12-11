@@ -481,7 +481,7 @@ Resets HEAD to the state that you tell it to.
 Run when you have made personal oopsies.
 ]].row[
 ### .center[**WHEN** Though?]
-- When you want to undo the latest commit message.
+- When you want to undo the latest commit.
   - `git reset --soft HEAD~1` (previous commit) (top left)
 - When you want to throw out additions to the index, e.g. you ran `git add .` by accident
   - `git reset` (runs `git reset --mixed` as default) (mid top left)
@@ -511,7 +511,7 @@ Run when you need to undo a commit.
 ]].row[
 ### .center[**WHEN** Though?]
 When you find a bug or small issue introduced by a commit. 
-&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
 **Note**: this can easily lead to merge conflicts.
 ]]
 
@@ -520,25 +520,20 @@ When you find a bug or small issue introduced by a commit.
 class: m1 split-two
 
 .column[.content[
-# [`git reset`](https://git-scm.com/docs/git-reset)
-Creates an empty Git repository.
+# [`git rm`](https://git-scm.com/docs/git-rm)
+Removes files from the Working Tree &amp; the Index. 
 &lt;br&gt;
-Creates directory `./git/` where all data in Git repo is stored.
-&lt;br&gt;
-.center[&lt;img src="assets/img/git-init.png" style="max-width:60%"&gt;]
+.center[&lt;img src="assets/img/git-rm.png" style=""&gt;]
 ]]
-.column.split-three[.row[.vmiddle[
-### .center[When to run `git init`?]
-Run when first creating a repo. Not after it's been made.
-]].row[.vmiddle[
+.column.split-20[.row[.vbottom-0[
+### .center[When to run `git rm`?]
+Run when you've tracked files with Git that you didn't want to (yet).
+]].row[
 ### .center[**WHEN** Though?]
-As soon as you can! The more you procrastinate, the more the never you will use Git!
-]].row[.vmiddle[
-### .center[How do I delete my git repo?]
-Delete the `./git` directory. 
-&lt;br&gt;
-e.g. `rm -rf .git`
-]]]
+You ran a `git add` on your really large data file (oops).
+&lt;br&gt;&lt;br&gt;
+**Note**: not a silver bullet, git still has your data stored in its history *if* you already committed it. In which case, a `git reset` or creating a new repo may be desired.
+]]
 
 ---
 class: middle center

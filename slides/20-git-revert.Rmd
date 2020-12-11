@@ -12,6 +12,6 @@ Run when you need to undo a commit.
 ]].row[
 ### .center[**WHEN** Though?]
 When you find a bug or small issue introduced by a commit. 
-<br>
+<br><br>
 **Note**: this can easily lead to merge conflicts.
 ]]
