@@ -20,24 +20,17 @@ output:
       navigation:
         scroll: false
     anchor_sections: false
-    
+    includes:
+      after_body: [theme/usr/js/alt-title.html, theme/usr/js/tile-view-toggle.html]
 ---
 
 ```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(fig.path = "assets/img/")
 xaringanExtra::use_tile_view()
-htmltools::tagList(
-  htmltools::htmlDependency(
-    src = "theme/usr/js", script = "tile-view-toggle.js",
-    version = "0.1.0", name = 'tile-view-toggle'
-  )
-) 
 ```
 
 ```{asis notes, include=FALSE}
 # NOTES:
-
 ```
 
 ```{r child="slides/theme.Rmd"}

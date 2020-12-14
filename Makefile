@@ -1,19 +1,32 @@
 .PHONY: all knit build deploy cleandist pdf
 
-GENERATED_FILES = index.html
+GENERATED_FILES = index.html 
+JS_JS_FILES = $(wildcard theme/usr/js/*.js)
+JS_HTML_FILES = $(subst .js,.html,$(JS_JS_FILES))
 
 knit: $(GENERATED_FILES)
 
 .knit-auto: $(GENERATED_FILES)
 	git commit -am "auto knit slides"
-	touch .knit-auto
+
+js: $(JS_HTML_FILES)
 
 all: .knit-auto build deploy cleandist
 
 pages: build deploy cleandist
 
-index.html: index.Rmd slides/*
+index.html: index.Rmd slides/* $(JS_HTML_FILES) 
 	R --slave -e "rmarkdown::render('index.Rmd', 'xaringan::moon_reader')"
+	touch .knit-auto
+
+$(JS_HTML_FILES): theme/usr/js/%.html: theme/usr/js/%.js
+	R --slave \
+	-e "library(htmltools); \
+	s <- trimws( \
+	gsub('\\\\\/\\\\\*.*?\\\\\*\\\\\/|([^\\\\\:]|^)\\\\\/\\\\\/.*$$', \
+	'', readLines('$<', warn = F, skipNul = T))); \
+	s <- s[s != '']; \
+	write(as.character(tags$$ script(HTML(paste0(s, collapse = '\n')))), '$@')"
 
 build:
 	git checkout gh-pages

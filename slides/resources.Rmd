@@ -1,9 +1,13 @@
 name: resources
-class: nomargin-ul nomargin-h2 nomargin-h3 nomargin-h4 nopadding-h2
+class: nomargin-ul nomargin-h2 nomargin-h3 nomargin-h4 nopadding-h2 split-10
 
+.row[
 ## <center>Presentation Resources</center>
+]
+.row[
+.split-three[
 
-.pull-left[
+.column.center[
 ### [Setup](#3)
 #### [Friends of Git](#4)
 Windows
@@ -26,10 +30,20 @@ macOS
 - [Using Projects in R / RStudio](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects)
 ]
 
-.pull-right[
+.column.center[
 #### [3 Trees of Git](#11)
 - [Git Reset / 3 Trees](https://www.atlassian.com/git/tutorials/undoing-changes/git-reset)
 
+#### Git Extras
+- [gitignore](https://git-scm.com/docs/gitignore)
+- [merge conflicts](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging#_basic_merge_conflicts)
+- [Oh My Zsh Git Plugin Aliases](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git)
+- [Git Extras](https://github.com/tj/git-extras)
+- [Git Revision Selection Notation (article)](https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection)
+- [Git Revision Selection Notation (man page)](https://git-scm.com/docs/gitrevisions)
+]
+
+.column.center[
 #### Git Commands
 - [git clone](https://git-scm.com/docs/git-clone)
 - [git init](https://git-scm.com/docs/git-init)
@@ -45,12 +59,5 @@ macOS
 - [git branch](https://git-scm.com/docs/git-branch)
 - [git checkout](https://git-scm.com/docs/git-checkout)
 - [git tag](https://git-scm.com/docs/git-tag)
-
-#### Git Extras
-- [gitignore](https://git-scm.com/docs/gitignore)
-- [merge conflicts](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging#_basic_merge_conflicts)
-- [Oh My Zsh Git Plugin Aliases](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git)
-- [Git Extras](https://github.com/tj/git-extras)
-- [Git Revision Selection Notation (article)](https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection)
-- [Git Revision Selection Notation (man page)](https://git-scm.com/docs/gitrevisions)
 ]
+]]

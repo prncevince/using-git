@@ -1,0 +1,24 @@
+class: m1 split-two
+
+.column[.content[
+# <center>"Branching"</center>
+The concept of diverging from the main line of development. 
+<br><br>
+"Branch"es can be used to develop features isolated from one another.
+<br><br>
+.center[![Hi](assets/img/branches.png)]
+
+- See [Git Branching in a Nutshell](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
+- See [branching](http://rogerdudler.github.io/git-guide/#branching) in [git the simple guide](http://rogerdudler.github.io/git-guide/)
+
+]]
+.column[.content[
+### .center[3 new commands]
+
+[git checkout](https://git-scm.com/docs/git-checkout), [git branch](https://git-scm.com/docs/git-branch), [git merge](https://git-scm.com/docs/git-merge)
+
+### .center[Example]
+
+![](assets/img/branching.png)
+
+]]

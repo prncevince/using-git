@@ -6,7 +6,6 @@
     <meta name="author" content="The Authors Names … just meta-data" />
     <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
     <script src="libs/tile-view/tile-view.js"></script>
-    <script src="libs/tile-view-toggle/tile-view-toggle.js"></script>
     <link rel="stylesheet" href="theme/src/css/kunoichi.css" type="text/css" />
     <link rel="stylesheet" href="theme/src/css/ninjutsu.css" type="text/css" />
     <link rel="stylesheet" href="theme/src/css/ninpo.css" type="text/css" />
@@ -150,16 +149,16 @@ Windows:&lt;br&gt;
 ### ~/.profile [~/.bash_profile, ~/.bashrc, ~/.zshrc]
 
 ```bash
-# SSH Agent
-if [ -z "$SSH_AUTH_SOCK" ] ; then
-  eval `ssh-agent -s`
-fi
-
 # Logout
 exit_session() {
   . ~/.bash_logout
 }
-trap exit_session SIGHUP
+
+# SSH Agent
+if [ -z "$SSH_AUTH_SOCK" ] ; then
+  eval `ssh-agent -s`
+  trap exit_session SIGHUP
+fi
 ```
 
 ### ~/.bash_logout or ~/.zlogout
@@ -542,6 +541,30 @@ class: middle center
 
 ---
 
+class: m1 split-two
+
+.column[.content[
+# &lt;center&gt;"Branching"&lt;/center&gt;
+The concept of diverging from the main line of development. 
+&lt;br&gt;&lt;br&gt;
+"Branch"es can be used to develop features isolated from one another.
+&lt;br&gt;&lt;br&gt;
+.center[![Hi](assets/img/branches.png)]
+
+- See [Git Branching in a Nutshell](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
+- See [branching](http://rogerdudler.github.io/git-guide/#branching) in [git the simple guide](http://rogerdudler.github.io/git-guide/)
+
+]]
+.column[.content[
+### .center[3 new commands]
+
+[git checkout](https://git-scm.com/docs/git-checkout), [git branch](https://git-scm.com/docs/git-branch), [git merge](https://git-scm.com/docs/git-merge)
+
+### .center[Example]
+
+![](assets/img/branching.png)
+
+]]
 
 ---
 
@@ -653,11 +676,15 @@ class: center middle
 ---
 
 name: resources
-class: nomargin-ul nomargin-h2 nomargin-h3 nomargin-h4 nopadding-h2
+class: nomargin-ul nomargin-h2 nomargin-h3 nomargin-h4 nopadding-h2 split-10
 
+.row[
 ## &lt;center&gt;Presentation Resources&lt;/center&gt;
+]
+.row[
+.split-three[
 
-.pull-left[
+.column.center[
 ### [Setup](#3)
 #### [Friends of Git](#4)
 Windows
@@ -680,10 +707,20 @@ macOS
 - [Using Projects in R / RStudio](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects)
 ]
 
-.pull-right[
+.column.center[
 #### [3 Trees of Git](#11)
 - [Git Reset / 3 Trees](https://www.atlassian.com/git/tutorials/undoing-changes/git-reset)
 
+#### Git Extras
+- [gitignore](https://git-scm.com/docs/gitignore)
+- [merge conflicts](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging#_basic_merge_conflicts)
+- [Oh My Zsh Git Plugin Aliases](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git)
+- [Git Extras](https://github.com/tj/git-extras)
+- [Git Revision Selection Notation (article)](https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection)
+- [Git Revision Selection Notation (man page)](https://git-scm.com/docs/gitrevisions)
+]
+
+.column.center[
 #### Git Commands
 - [git clone](https://git-scm.com/docs/git-clone)
 - [git init](https://git-scm.com/docs/git-init)
@@ -699,15 +736,8 @@ macOS
 - [git branch](https://git-scm.com/docs/git-branch)
 - [git checkout](https://git-scm.com/docs/git-checkout)
 - [git tag](https://git-scm.com/docs/git-tag)
-
-#### Git Extras
-- [gitignore](https://git-scm.com/docs/gitignore)
-- [merge conflicts](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging#_basic_merge_conflicts)
-- [Oh My Zsh Git Plugin Aliases](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git)
-- [Git Extras](https://github.com/tj/git-extras)
-- [Git Revision Selection Notation (article)](https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection)
-- [Git Revision Selection Notation (man page)](https://git-scm.com/docs/gitrevisions)
 ]
+]]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="theme/src/js/remark.min.js"></script>
@@ -802,6 +832,80 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   }
   preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
 })(document);</script>
+<script>(function() {
+var img, imgs = document.getElementsByTagName('img');
+for (var i = 0; i < imgs.length; i++) {
+img = imgs[i];
+if (!img.title) img.title = img.alt;
+}
+})();</script>
+<script>(function(){
+const ready = function (fn) {
+const completed = () => {
+document.removeEventListener('DOMContentLoaded', completed)
+window.removeEventListener('load', completed)
+fn()
+}
+if (document.readyState !== 'loading') {
+setTimeout(fn)
+} else {
+document.addEventListener('DOMContentLoaded', completed)
+window.addEventListener('load', completed)
+}
+}
+ready(function(){
+const toggleElement = el => {
+el.style.display = el.style.display === 'none' ? '' : 'none'
+}
+const remarkSlideShow = document.querySelector('div.remark-slides-area')
+let tileView = document.querySelector('div.remark__tile-view')
+const blockEvent = ev => ev.stopPropagation()
+const blockScaling = function (ev) {
+if (ev.controlKey || ev.metaKey) {
+if (ev.key === '=' || ev.key === '-') {
+ev.preventDefault()
+console.log('window scaling is not allowed inside the tile overview')
+}
+}
+}
+const tileVars = {currentSlideIdx: slideshow.getCurrentSlideIndex()}
+const toggleTileView = function () {
+toggleElement(tileView)
+toggleElement(remarkSlideShow)
+if (tileView.style.display === 'none') {
+slideshow.gotoSlide(tileVars.currentSlideIdx + 1)
+tileView.removeEventListener('mousewheel', blockEvent)
+tileView.removeEventListener('DOMMouseScroll', blockEvent)
+console.log('removing blockScaling')
+document.removeEventListener('keydown', blockScaling)
+} else {
+tileVars.currentSlideIdx = slideshow.getCurrentSlideIndex()
+const tiles = tileView.querySelectorAll('.remark__tile-view__tile');
+[...tiles].forEach((tile, idx) => {
+tile.classList.toggle(
+'remark__tile-view__tile--seen',
+idx < tileVars.currentSlideIdx
+)
+tile.classList.toggle(
+'remark__tile-view__tile--current',
+idx === tileVars.currentSlideIdx
+)
+})
+tiles[tileVars.currentSlideIdx].scrollIntoView({
+behavior: 'smooth',
+block: 'center'
+})
+tileView.addEventListener('mousewheel', blockEvent)
+tileView.addEventListener('DOMMouseScroll', blockEvent)
+console.log('adding blockScaling')
+document.addEventListener('keydown', blockScaling)
+}
+}
+document.getElementsByClassName('my-header').forEach(
+e => e.addEventListener("click", toggleTileView)
+);
+})
+})()</script>
 
 <script>
 slideshow._releaseMath = function(el) {

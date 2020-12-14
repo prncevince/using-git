@@ -30,16 +30,16 @@ Windows:<br>
 ### ~/.profile [~/.bash_profile, ~/.bashrc, ~/.zshrc]
 
 ```bash
-# SSH Agent
-if [ -z "$SSH_AUTH_SOCK" ] ; then
-  eval `ssh-agent -s`
-fi
-
 # Logout
 exit_session() {
   . ~/.bash_logout
 }
-trap exit_session SIGHUP
+
+# SSH Agent
+if [ -z "$SSH_AUTH_SOCK" ] ; then
+  eval `ssh-agent -s`
+  trap exit_session SIGHUP
+fi
 ```
 
 ### ~/.bash_logout or ~/.zlogout
