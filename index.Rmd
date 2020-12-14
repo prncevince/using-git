@@ -25,6 +25,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(fig.path = "assets/img/")
 xaringanExtra::use_tile_view()
 ```
