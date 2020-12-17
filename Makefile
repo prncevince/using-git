@@ -7,7 +7,7 @@ JS_HTML_FILES = $(subst .js,.html,$(JS_JS_FILES))
 knit: $(GENERATED_FILES)
 
 .knit-auto: $(GENERATED_FILES)
-	git commit -am "auto knit slides"
+	git diff-index --quiet HEAD || git commit -am "auto knit slides"
 
 js: $(JS_HTML_FILES)
 
