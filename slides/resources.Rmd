@@ -23,28 +23,49 @@ macOS
 - [Connecting to GitHub with SSH](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
 - [GitLab and SSH keys](https://docs.gitlab.com/ee/ssh/README.html)
 
-#### [Getting Started](#8)
+#### [Getting Started](#9)
 - [Demo Repo to Clone](https://esgovcloud.com/mAndA/clone-me)
 
-#### [R Project + RStudio + Git](#9)
+#### [R Project + RStudio + Git](#10)
 - [Using Projects in R / RStudio](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects)
-]
 
-.column.center[
-#### [3 Trees of Git](#11)
-- [Git Reset / 3 Trees](https://www.atlassian.com/git/tutorials/undoing-changes/git-reset)
-
-#### Git Extras
-- [gitignore](https://git-scm.com/docs/gitignore)
-- [merge conflicts](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging#_basic_merge_conflicts)
+#### [CLI Aliases](#29)
 - [Oh My Zsh Git Plugin Aliases](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git)
 - [Git Extras](https://github.com/tj/git-extras)
-- [Git Revision Selection Notation (article)](https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection)
-- [Git Revision Selection Notation (man page)](https://git-scm.com/docs/gitrevisions)
 ]
 
 .column.center[
-#### Git Commands
+### Concepts
+- [gitignore](https://git-scm.com/docs/gitignore)
+- [merge conflicts](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging#_basic_merge_conflicts)
+
+#### [3 Trees of Git](#12)
+- [Git Reset / 3 Trees](https://www.atlassian.com/git/tutorials/undoing-changes/git-reset)
+
+#### [Revision Selection](#19)
+- [man gitrevisions](https://git-scm.com/docs/gitrevisions)
+- [Git Tools - Revision Selection](https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection)
+
+#### [Branching](#23)
+- [Git Branching in a Nutshell](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
+
+#### [Releases](#25)
+- [Git Basics Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
+- [GitHub - Managing Releases](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/managing-releases-in-a-repository)
+- [GitLab](https://docs.gitlab.com/ee/user/project/releases/index.html)
+
+CI/CD Pipelines
+- [GitLab CI/CD](https://docs.gitlab.com/ee/ci/), [GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions), [Jenkins](https://jenkins.io), [AWS Codepipeline](https://aws.amazon.com/codepipeline/), [Travis CI](https://travis-ci.org/)
+
+
+
+### Guides / Resources
+- [Git the Simple Guide](http://rogerdudler.github.io/git-guide/)
+]
+
+.column.center[
+### Git Commands
+- [git status](https://git-scm.com/docs/git-status)
 - [git clone](https://git-scm.com/docs/git-clone)
 - [git init](https://git-scm.com/docs/git-init)
 - [git remote](https://git-scm.com/docs/git-remote)
@@ -58,6 +79,7 @@ macOS
 - [git rm](https://git-scm.com/docs/git-rm)
 - [git branch](https://git-scm.com/docs/git-branch)
 - [git checkout](https://git-scm.com/docs/git-checkout)
+- [git merge](https://git-scm.com/docs/git-merge)
 - [git tag](https://git-scm.com/docs/git-tag)
 ]
 ]]

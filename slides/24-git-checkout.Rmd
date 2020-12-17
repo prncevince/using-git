@@ -2,21 +2,27 @@ class: m1 split-two
 
 .column[.content[
 # [`git checkout`](https://git-scm.com/docs/git-checkout)
-Creates an empty Git repository.
+Lets you switch between differing files, commits, and branches (more than creating/switching to new branches with the `-b` flag). 
 <br>
-Creates directory `./git/` where all data in Git repo is stored.
-<br>
-.center[<img src="assets/img/git-init.png" style="max-width:60%">]
+.center[<img src="assets/img/git-checkout.png" style="max-width:83%">]
 ]]
-.column.split-three[.row[.vmiddle[
-### .center[When to run `git init`?]
-Run when first creating a repo. Not after it's been made.
-]].row[.vmiddle[
+.column.split-20[.row[.vbottom-0[
+### .center[When to run `git checkout`?]
+Run when creating a new feature branch, or when you need to access/use old files & commits. 
+]].row[
 ### .center[**WHEN** Though?]
-As soon as you can! The more you procrastinate, the more the never you will use Git!
-]].row[.vmiddle[
-### .center[How do I delete my git repo?]
-Delete the `./git` directory. 
-<br>
-e.g. `rm -rf .git`
-]]]
+Too many scenarios. See [`git checkout --help`](https://git-scm.com/docs/git-checkout) & the ["EXAMPLES"](https://git-scm.com/docs/git-checkout#_examples) section. 
+
+Here are a few:
+```bash
+# create / switch to new branch
+git checkout -b feature-branch
+# checkout old file(s)
+# [<tree-ish>] is a revision selection / commit
+# <paths> are files / file patterns 
+git checkout [<tree-ish>] <paths>
+# checkout previous commits
+# grab <commit> from `git log` & use >= 7 characters
+git checkout <commit> 
+```
+]]

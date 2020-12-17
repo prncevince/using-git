@@ -1,0 +1,32 @@
+class: m1 split-two
+
+.column[.content[
+# <center>Releases</center>
+[Releases](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/managing-releases-in-a-repository) are versions of packaged software.
+
+### Anatomy 
+
+Produced from [Git "tags"](https://git-scm.com/book/en/v2/Git-Basics-Tagging), contain release notes, and include binary installation assets for supported OS's.
+
+### Release Cycle
+
+Involves "building" assets, performed via CI/CD pipelines:
+<br>
+\- e.g. [GitLab CI/CD](https://docs.gitlab.com/ee/ci/), [GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions), [Jenkins](https://jenkins.io), [AWS Codepipeline](https://aws.amazon.com/codepipeline/), [Travis CI](https://travis-ci.org/), 2-many-services, etc.
+<br><br>
+R Package Example - [R Markdown](https://github.com/rstudio/rmarkdown):
+
+- [Releases](https://github.com/rstudio/rmarkdown/releases)
+- [GitHub Workflows](https://github.com/rstudio/rmarkdown/tree/master/.github/workflows)
+- [GitHub Actions for the R Language](https://github.com/r-lib/actions)
+
+]]
+.column[.content[
+### .center[1 new command & 99 tools ...]
+
+[`git tag`](https://git-scm.com/docs/git-tag)
+
+### .center[Example (1 tool)]
+
+.center[<img style="max-width: 91%" src="assets/img/releases.png">]
+]]

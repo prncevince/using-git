@@ -204,7 +204,7 @@ Host esgovcloud.com esgovcloud
 etc ...
 
 ### .center[Vince's Example]
-.center[&lt;img style="max-width: 55%" src="assets/img/ssh-config.png"&gt;]
+.center[&lt;img style="max-width: 52%" src="assets/img/ssh-config.png"&gt;]
 ]]
 
 ---
@@ -511,7 +511,7 @@ Run when you need to undo a commit.
 ### .center[**WHEN** Though?]
 When you find a bug or small issue introduced by a commit. 
 &lt;br&gt;&lt;br&gt;
-**Note**: this can easily lead to merge conflicts.
+**Note**: this can easily lead to [merge conflicts](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging#_basic_merge_conflicts).
 ]]
 
 ---
@@ -549,21 +549,24 @@ The concept of diverging from the main line of development.
 &lt;br&gt;&lt;br&gt;
 "Branch"es can be used to develop features isolated from one another.
 &lt;br&gt;&lt;br&gt;
-.center[![Hi](assets/img/branches.png)]
+.center[![Branches from Git the Simple Guide](assets/img/branches.png)]
 
 - See [Git Branching in a Nutshell](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
 - See [branching](http://rogerdudler.github.io/git-guide/#branching) in [git the simple guide](http://rogerdudler.github.io/git-guide/)
+
+Merging
+
+- [Atlassian on Git Merge](https://www.atlassian.com/git/tutorials/using-branches/git-merge)
 
 ]]
 .column[.content[
 ### .center[3 new commands]
 
-[git checkout](https://git-scm.com/docs/git-checkout), [git branch](https://git-scm.com/docs/git-branch), [git merge](https://git-scm.com/docs/git-merge)
+[`git checkout`](https://git-scm.com/docs/git-checkout), [`git branch`](https://git-scm.com/docs/git-branch), [`git merge`](https://git-scm.com/docs/git-merge)
 
 ### .center[Example]
 
-![](assets/img/branching.png)
-
+.center[&lt;img style="max-width:60%" src="assets/img/branching.png"&gt;]
 ]]
 
 ---
@@ -572,27 +575,65 @@ class: m1 split-two
 
 .column[.content[
 # [`git checkout`](https://git-scm.com/docs/git-checkout)
-Creates an empty Git repository.
+Lets you switch between differing files, commits, and branches (more than creating/switching to new branches with the `-b` flag). 
 &lt;br&gt;
-Creates directory `./git/` where all data in Git repo is stored.
-&lt;br&gt;
-.center[&lt;img src="assets/img/git-init.png" style="max-width:60%"&gt;]
+.center[&lt;img src="assets/img/git-checkout.png" style="max-width:83%"&gt;]
 ]]
-.column.split-three[.row[.vmiddle[
-### .center[When to run `git init`?]
-Run when first creating a repo. Not after it's been made.
-]].row[.vmiddle[
+.column.split-20[.row[.vbottom-0[
+### .center[When to run `git checkout`?]
+Run when creating a new feature branch, or when you need to access/use old files &amp; commits. 
+]].row[
 ### .center[**WHEN** Though?]
-As soon as you can! The more you procrastinate, the more the never you will use Git!
-]].row[.vmiddle[
-### .center[How do I delete my git repo?]
-Delete the `./git` directory. 
-&lt;br&gt;
-e.g. `rm -rf .git`
-]]]
+Too many scenarios. See [`git checkout --help`](https://git-scm.com/docs/git-checkout) &amp; the ["EXAMPLES"](https://git-scm.com/docs/git-checkout#_examples) section. 
+
+Here are a few:
+```bash
+# create / switch to new branch
+git checkout -b feature-branch
+# checkout old file(s)
+# [&lt;tree-ish&gt;] is a revision selection / commit
+# &lt;paths&gt; are files / file patterns 
+git checkout [&lt;tree-ish&gt;] &lt;paths&gt;
+# checkout previous commits
+# grab &lt;commit&gt; from `git log` &amp; use &gt;= 7 characters
+git checkout &lt;commit&gt; 
+```
+]]
 
 ---
 
+class: m1 split-two
+
+.column[.content[
+# &lt;center&gt;Releases&lt;/center&gt;
+[Releases](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/managing-releases-in-a-repository) are versions of packaged software.
+
+### Anatomy 
+
+Produced from [Git "tags"](https://git-scm.com/book/en/v2/Git-Basics-Tagging), contain release notes, and include binary installation assets for supported OS's.
+
+### Release Cycle
+
+Involves "building" assets, performed via CI/CD pipelines:
+&lt;br&gt;
+\- e.g. [GitLab CI/CD](https://docs.gitlab.com/ee/ci/), [GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions), [Jenkins](https://jenkins.io), [AWS Codepipeline](https://aws.amazon.com/codepipeline/), [Travis CI](https://travis-ci.org/), 2-many-services, etc.
+&lt;br&gt;&lt;br&gt;
+R Package Example - [R Markdown](https://github.com/rstudio/rmarkdown):
+
+- [Releases](https://github.com/rstudio/rmarkdown/releases)
+- [GitHub Workflows](https://github.com/rstudio/rmarkdown/tree/master/.github/workflows)
+- [GitHub Actions for the R Language](https://github.com/r-lib/actions)
+
+]]
+.column[.content[
+### .center[1 new command &amp; 99 tools ...]
+
+[`git tag`](https://git-scm.com/docs/git-tag)
+
+### .center[Example (1 tool)]
+
+.center[&lt;img style="max-width: 91%" src="assets/img/releases.png"&gt;]
+]]
 
 ---
 
@@ -600,24 +641,24 @@ class: m1 split-two
 
 .column[.content[
 # [`git tag`](https://git-scm.com/docs/git-tag)
-Creates an empty Git repository.
+Creates, lists, and deletes Git tags. 
 &lt;br&gt;
-Creates directory `./git/` where all data in Git repo is stored.
-&lt;br&gt;
-.center[&lt;img src="assets/img/git-init.png" style="max-width:60%"&gt;]
+.center[&lt;img src="assets/img/git-tag.png" style="max-width:80%"&gt;]
 ]]
-.column.split-three[.row[.vmiddle[
-### .center[When to run `git init`?]
-Run when first creating a repo. Not after it's been made.
-]].row[.vmiddle[
+.column.split-20[.row[.vbottom-0[
+### .center[When to run `git tag`?]
+Run when you are ready to create a newly versioned release of your software.
+]].row[
 ### .center[**WHEN** Though?]
-As soon as you can! The more you procrastinate, the more the never you will use Git!
-]].row[.vmiddle[
-### .center[How do I delete my git repo?]
-Delete the `./git` directory. 
-&lt;br&gt;
-e.g. `rm -rf .git`
-]]]
+Examples for M&amp;A's usages:
+
+- When a new version of an R package is created
+- Before an EC2 instance is ready to be snap-shotted
+  - If shell code is used &amp; formed into a repo to configure instance
+- After writing features to an ETL process
+- Updates to our web apps
+
+]]
 
 ---
 class: middle center
@@ -700,28 +741,49 @@ macOS
 - [Connecting to GitHub with SSH](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
 - [GitLab and SSH keys](https://docs.gitlab.com/ee/ssh/README.html)
 
-#### [Getting Started](#8)
+#### [Getting Started](#9)
 - [Demo Repo to Clone](https://esgovcloud.com/mAndA/clone-me)
 
-#### [R Project + RStudio + Git](#9)
+#### [R Project + RStudio + Git](#10)
 - [Using Projects in R / RStudio](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects)
-]
 
-.column.center[
-#### [3 Trees of Git](#11)
-- [Git Reset / 3 Trees](https://www.atlassian.com/git/tutorials/undoing-changes/git-reset)
-
-#### Git Extras
-- [gitignore](https://git-scm.com/docs/gitignore)
-- [merge conflicts](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging#_basic_merge_conflicts)
+#### [CLI Aliases](#29)
 - [Oh My Zsh Git Plugin Aliases](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git)
 - [Git Extras](https://github.com/tj/git-extras)
-- [Git Revision Selection Notation (article)](https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection)
-- [Git Revision Selection Notation (man page)](https://git-scm.com/docs/gitrevisions)
 ]
 
 .column.center[
-#### Git Commands
+### Concepts
+- [gitignore](https://git-scm.com/docs/gitignore)
+- [merge conflicts](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging#_basic_merge_conflicts)
+
+#### [3 Trees of Git](#12)
+- [Git Reset / 3 Trees](https://www.atlassian.com/git/tutorials/undoing-changes/git-reset)
+
+#### [Revision Selection](#19)
+- [man gitrevisions](https://git-scm.com/docs/gitrevisions)
+- [Git Tools - Revision Selection](https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection)
+
+#### [Branching](#23)
+- [Git Branching in a Nutshell](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
+
+#### [Releases](#25)
+- [Git Basics Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
+- [GitHub - Managing Releases](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/managing-releases-in-a-repository)
+- [GitLab](https://docs.gitlab.com/ee/user/project/releases/index.html)
+
+CI/CD Pipelines
+- [GitLab CI/CD](https://docs.gitlab.com/ee/ci/), [GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions), [Jenkins](https://jenkins.io), [AWS Codepipeline](https://aws.amazon.com/codepipeline/), [Travis CI](https://travis-ci.org/)
+
+
+
+### Guides / Resources
+- [Git the Simple Guide](http://rogerdudler.github.io/git-guide/)
+]
+
+.column.center[
+### Git Commands
+- [git status](https://git-scm.com/docs/git-status)
 - [git clone](https://git-scm.com/docs/git-clone)
 - [git init](https://git-scm.com/docs/git-init)
 - [git remote](https://git-scm.com/docs/git-remote)
@@ -735,6 +797,7 @@ macOS
 - [git rm](https://git-scm.com/docs/git-rm)
 - [git branch](https://git-scm.com/docs/git-branch)
 - [git checkout](https://git-scm.com/docs/git-checkout)
+- [git merge](https://git-scm.com/docs/git-merge)
 - [git tag](https://git-scm.com/docs/git-tag)
 ]
 ]]

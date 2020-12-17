@@ -13,5 +13,5 @@ Run when you need to undo a commit.
 ### .center[**WHEN** Though?]
 When you find a bug or small issue introduced by a commit. 
 <br><br>
-**Note**: this can easily lead to merge conflicts.
+**Note**: this can easily lead to [merge conflicts](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging#_basic_merge_conflicts).
 ]]

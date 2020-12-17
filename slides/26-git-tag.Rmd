@@ -2,21 +2,21 @@ class: m1 split-two
 
 .column[.content[
 # [`git tag`](https://git-scm.com/docs/git-tag)
-Creates an empty Git repository.
+Creates, lists, and deletes Git tags. 
 <br>
-Creates directory `./git/` where all data in Git repo is stored.
-<br>
-.center[<img src="assets/img/git-init.png" style="max-width:60%">]
+.center[<img src="assets/img/git-tag.png" style="max-width:80%">]
 ]]
-.column.split-three[.row[.vmiddle[
-### .center[When to run `git init`?]
-Run when first creating a repo. Not after it's been made.
-]].row[.vmiddle[
+.column.split-20[.row[.vbottom-0[
+### .center[When to run `git tag`?]
+Run when you are ready to create a newly versioned release of your software.
+]].row[
 ### .center[**WHEN** Though?]
-As soon as you can! The more you procrastinate, the more the never you will use Git!
-]].row[.vmiddle[
-### .center[How do I delete my git repo?]
-Delete the `./git` directory. 
-<br>
-e.g. `rm -rf .git`
-]]]
+Examples for M&A's usages:
+
+- When a new version of an R package is created
+- Before an EC2 instance is ready to be snap-shotted
+  - If shell code is used & formed into a repo to configure instance
+- After writing features to an ETL process
+- Updates to our web apps
+
+]]
