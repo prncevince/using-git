@@ -14,9 +14,13 @@ Run when you are ready to create a newly versioned release of your software.
 Examples for M&A's usages:
 
 - When a new version of an R package is created
-- Before an EC2 instance is ready to be snap-shotted
-  - If shell code is used & formed into a repo to configure instance
-- After writing features to an ETL process
 - Updates to our web apps
+- After writing features to an ETL process
+- Before an EC2 instance is ready to be snapshotted
+  - If shell code is used & formed into a repo to configure instance
+      - i.e. using a configuration management tool like [Puppet](https://puppet.com/products/puppet-enterprise)/[Ansible](https://www.ansible.com)
+      - delivering on compliant software through the RMF cycle using tools like [Chef](https://www.chef.io/products/chef-compliance)
+
+
 
 ]]

@@ -89,6 +89,7 @@ You will mess up
 ]]]]
 
 ---
+
 class: middle center
 
 # .x300.advent-pro[Setup]
@@ -203,7 +204,7 @@ Host esgovcloud.com esgovcloud
 `ssh -T github`&lt;br&gt;
 etc ...
 
-### .center[Vince's Example]
+### .center[Another Example]
 .center[&lt;img style="max-width: 52%" src="assets/img/ssh-config.png"&gt;]
 ]]
 
@@ -293,8 +294,8 @@ RStudio Support Guide:
 ]]
 ???
 Demo with https://esgovcloud.com/mAndA/clone-me.
-
 ---
+
 class: middle center
 
 # .x300.advent-pro[Basic Concepts &amp; `Commands`]
@@ -460,6 +461,7 @@ basic scenarios:
 ]]]
 
 ---
+
 class: middle center
 
 # .x300.advent-pro[Undoing Things]
@@ -535,6 +537,7 @@ You ran a `git add` on your really large data file (oops).
 ]]
 
 ---
+
 class: middle center
 
 # .x300.advent-pro[Development Operations]
@@ -602,7 +605,7 @@ git checkout &lt;commit&gt;
 
 ---
 
-class: m1 split-two
+class: m1 split-two nomargin-ul
 
 .column[.content[
 # &lt;center&gt;Releases&lt;/center&gt;
@@ -615,11 +618,10 @@ Produced from [Git "tags"](https://git-scm.com/book/en/v2/Git-Basics-Tagging), c
 ### Release Cycle
 
 Involves "building" assets, performed via CI/CD pipelines:
-&lt;br&gt;
-\- e.g. [GitLab CI/CD](https://docs.gitlab.com/ee/ci/), [GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions), [Jenkins](https://jenkins.io), [AWS Codepipeline](https://aws.amazon.com/codepipeline/), [Travis CI](https://travis-ci.org/), 2-many-services, etc.
-&lt;br&gt;&lt;br&gt;
-R Package Example - [R Markdown](https://github.com/rstudio/rmarkdown):
 
+- e.g. [GitLab CI/CD](https://docs.gitlab.com/ee/ci/), [GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions), [Jenkins](https://jenkins.io), [AWS Codepipeline](https://aws.amazon.com/codepipeline/), [Travis CI](https://travis-ci.org/), 2-many-services, etc.
+
+### R Package example - [R Markdown](https://github.com/rstudio/rmarkdown)
 - [Releases](https://github.com/rstudio/rmarkdown/releases)
 - [GitHub Workflows](https://github.com/rstudio/rmarkdown/tree/master/.github/workflows)
 - [GitHub Actions for the R Language](https://github.com/r-lib/actions)
@@ -653,29 +655,40 @@ Run when you are ready to create a newly versioned release of your software.
 Examples for M&amp;A's usages:
 
 - When a new version of an R package is created
-- Before an EC2 instance is ready to be snap-shotted
-  - If shell code is used &amp; formed into a repo to configure instance
-- After writing features to an ETL process
 - Updates to our web apps
+- After writing features to an ETL process
+- Before an EC2 instance is ready to be snapshotted
+  - If shell code is used &amp; formed into a repo to configure instance
+      - i.e. using a configuration management tool like [Puppet](https://puppet.com/products/puppet-enterprise)/[Ansible](https://www.ansible.com)
+      - delivering on compliant software through the RMF cycle using tools like [Chef](https://www.chef.io/products/chef-compliance)
+
+
 
 ]]
 
 ---
+
 class: middle center
 
 # .x500.advent-pro[LARGE] .x200.advent-pro-ital[Files]
 
 ---
 
-class: m1 split-two
+class: m1 split-10
+
+.row[
+# .center[Dealing with Large Files]
+]
+.row.split-two[
 
 .column[.content[
-
+### .center[Use AWS S3 *most* of the time]
+.center[&lt;img src="assets/img/s3-large-files.png" style="max-width:89%"&gt;] 
 ]]
 .column[.content[
-
+### .center[Use Git LFS *some* of the time]
 ]]
-
+]
 
 ---
 
@@ -691,8 +704,8 @@ class: m1 split-two
 
 ]]
 
-
 ---
+
 class: middle center
 
 # .x300.advent-pro[R / Git Project Template]

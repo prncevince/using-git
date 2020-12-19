@@ -1,0 +1,21 @@
+class: m1 split-10
+
+.row[
+# .center[Dealing with Large Files]
+]
+.row.split-two[
+
+.column[.content[
+### .center[Use AWS S3 *most* of the time]
+.center[<img src="assets/img/s3-large-files.png" style="max-width:89%">] 
+]]
+.column[.content[
+### .center[Use Git LFS *some* of the time]
+[Git Large File Storage (LFS)](https://git-lfs.github.com/), is an extension to Git that replaces large files with text pointers inside of Git, while storing file contents on remote servers (like GitLab, GitHub, etc.)
+<br>
+The problem with Git LFS, is that there are quotas, and billing accounts involved when you exceed quotas (not very open source-y).
+.center[<img src="assets/img/git-lfs.png" style="">] 
+<br>
+Learn to [install/configure the AWS CLI](https://esgovcloud.com/mAndA/dev-docs/wiki/AWS-CLI) in our [dev-docs](https://esgovcloud.com/mAndA/dev-docs/wiki)
+]]
+]

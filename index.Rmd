@@ -54,9 +54,8 @@ knitr::opts_chunk$set(fig.path = "assets/img/")
 ```
 
 ---
-class: middle center
-
-# .x300.advent-pro[Setup]
+```{r child="slides/4-title-setup.Rmd"}
+```
 
 ---
 ```{r child="slides/5-git-and-friends.Rmd"}
@@ -85,11 +84,9 @@ Then, delete it.
 ```
 ???
 Demo with https://esgovcloud.com/mAndA/clone-me.
-
 ---
-class: middle center
-
-# .x300.advent-pro[Basic Concepts & `Commands`]
+```{r child="slides/11-title-concepts-commands.Rmd"}
+```
 
 ---
 ```{r child="slides/12-three-trees.Rmd"}
@@ -116,9 +113,8 @@ class: middle center
 ```
 
 ---
-class: middle center
-
-# .x300.advent-pro[Undoing Things]
+```{r child="slides/18-title-undoing-things.Rmd"}
+```
 
 ---
 ```{r child="slides/19-git-reset.Rmd"}
@@ -133,9 +129,8 @@ class: middle center
 ```
 
 ---
-class: middle center
-
-# .x300.advent-pro[Development Operations]
+```{r child="slides/22-title-development-operations.Rmd"}
+```
 
 ---
 ```{r child="slides/23-branching.Rmd"}
@@ -154,34 +149,28 @@ class: middle center
 ```
 
 ---
-class: middle center
-
-# .x500.advent-pro[LARGE] .x200.advent-pro-ital[Files]
-
----
-```{r child="slides/28-git-lfs.Rmd"}
+```{r child="slides/27-title-large-files.Rmd"}
 ```
 
+---
+```{r child="slides/28-s3-git-lfs.Rmd"}
+```
 
 ---
 ```{r child="slides/29-extras-aliases.Rmd"}
 ```
 
-
 ---
-class: middle center
-
-# .x300.advent-pro[R / Git Project Template]
+```{r child="slides/30-title-project-template.Rmd"}
+```
 
 ---
 ```{r child="slides/31-project-template.Rmd"}
 ```
 
 ---
-
-class: center middle
-
-# .x300.advent-pro[Git or Done]
+```{r child="slides/32-title-git-or-done.Rmd"}
+```
 
 ---
 ```{r child="slides/resources.Rmd"}

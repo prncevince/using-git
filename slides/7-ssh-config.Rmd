@@ -28,6 +28,6 @@ Host esgovcloud.com esgovcloud
 `ssh -T github`<br>
 etc ...
 
-### .center[Vince's Example]
+### .center[Another Example]
 .center[<img style="max-width: 52%" src="assets/img/ssh-config.png">]
 ]]
