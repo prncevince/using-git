@@ -687,13 +687,14 @@ class: m1 split-10
 ]]
 .column[.content[
 ### .center[Use Git LFS *some* of the time]
+.x75[
 [Git Large File Storage (LFS)](https://git-lfs.github.com/), is an extension to Git that replaces large files with text pointers inside of Git, while storing file contents on remote servers (like GitLab, GitHub, etc.)
-&lt;br&gt;
-The problem with Git LFS, is that there are quotas, and billing accounts involved when you exceed quotas (not very open source-y).
+&lt;br&gt;&lt;br&gt;
+[Quotas](https://forum.gitlab.com/t/max-size-per-repo/17403) or [billing accounts](https://docs.github.com/en/free-pro-team@latest/github/managing-large-files/about-storage-and-bandwidth-usage) can get involved (depending on service). You also may deal with [file locking](https://github.com/git-lfs/git-lfs/wiki/File-Locking) (helps prevent merge conflicts).
 .center[&lt;img src="assets/img/git-lfs.png" style=""&gt;] 
-&lt;br&gt;
+
 Learn to [install/configure the AWS CLI](https://esgovcloud.com/mAndA/dev-docs/wiki/AWS-CLI) in our [dev-docs](https://esgovcloud.com/mAndA/dev-docs/wiki)
-]]
+]]]
 ]
 
 ---
