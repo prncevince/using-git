@@ -7,7 +7,7 @@ class: m1 split-10
 .column.split-30.with-border[
 .row[.content[
 ### .center[Git Aliases]
-A popular "framework" for Zsh, [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh), contains built in [plugins](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins) for shell utilities.
+A popular "framework" for Zsh, [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh), contains built in [plugins](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins) for shell utilities.
 <br><br>
 The [Git plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git) provides **many** useful aliases.
 ]]

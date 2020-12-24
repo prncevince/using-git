@@ -29,9 +29,11 @@ macOS
 #### [R Project + RStudio + Git](#10)
 - [Using Projects in R / RStudio](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects)
 
-#### [CLI Aliases](#29)
+#### [CLI, Aliases, & Extras](#29)
 - [Oh My Zsh Git Plugin Aliases](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git)
 - [Git Extras](https://github.com/tj/git-extras)
+- [GitHub CLI](https://cli.github.com)
+- [GitLab CLI](https://glab.readthedocs.io)
 ]
 
 .column.center[
