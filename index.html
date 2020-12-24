@@ -699,17 +699,44 @@ Learn to [install/configure the AWS CLI](https://esgovcloud.com/mAndA/dev-docs/w
 
 ---
 
-class: m1 split-two
+class: m1 split-10
 
-.column[.content[
-
-- https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git
-- https://github.com/tj/git-extras 
-
+.row[
+# .center[Git Aliases &amp; Extras]
+]
+.row.split-two[
+.column.split-30.with-border[
+.row[.content[
+### .center[Git Aliases]
+A popular "framework" for Zsh, [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh), contains built in [plugins](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins) for shell utilities.
+&lt;br&gt;&lt;br&gt;
+The [Git plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git) provides **many** useful aliases.
 ]]
+.row[.content[
+A shell [`alias`](https://www.gnu.org/software/bash/manual/html_node/Aliases.html) is a string/shortcut to a command within a shell session.
+&lt;br&gt;&lt;br&gt;
+Shell aliases are set via:&lt;br&gt;`alias &lt;alias-name&gt;="&lt;alias command&gt;"`
+&lt;br&gt;
+Are unset via:&lt;br&gt;`unalias &lt;alias-name&gt;`
+&lt;br&gt;
+Are viewed simply via:&lt;br&gt;`alias` or `alias &lt;alias-name&gt;`
+&lt;br&gt;&lt;br&gt;
+The [Zsh](http://zsh.sourceforge.net) ("Z Shell"), is a shell based on *[bash](https://www.gnu.org/software/bash/manual/bash.html#Introduction), ksh, and tcsh*. It is the [default Terminal shell on macOS &gt;= 10.15](https://support.apple.com/en-us/HT208050). 
+]]]
 .column[.content[
+### .center[Git Extras]
+You can chain together Git tasks into functions, or even new `git` commands, like the [Git Extras](https://github.com/tj/git-extras) project. You can checkout the [commands here](https://github.com/tj/git-extras/blob/master/Commands.md).
+### .center[GitHub/GitLab CLIs]
+CLI tools for common GitHub / GitLab tasks (e.g. pull/merge requests) are in development.
 
+- GitHub CLI: [`gh`](https://cli.github.com)
+- GitLab CLI: [`glab`](https://glab.readthedocs.io)
+
+Can both be easily configured for Enterprise Servers
+- [GitHub CLI - Enterprise Server](https://cli.github.com/manual/#github-enterprise-server)
+- [GitLab CLI - Enterprise Server](https://github.com/profclems/glab#configuration)
 ]]
+]
 
 ---
 
