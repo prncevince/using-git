@@ -22,6 +22,6 @@ Run when you have made personal oopsies.
   - `git reset --hard HEAD~1` (previous commit) (bottom left)
 
 .x75[What is this `HEAD~1` notation?
-- `~n` means $n^{th}$ generate of the named commit. So `HEAD~1` refers to the commit before the latest (e.g. 1 before HEAD).
+- `~n` means $n^{th}$ generation of the named commit. So `HEAD~1` refers to the commit before the latest (e.g. 1 before HEAD).
 - You can Boggle your brains at [`man gitrevisions`](https://git-scm.com/docs/gitrevisions) or <br> [Git Tools - Revision Selection](https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection)
 ]]]
