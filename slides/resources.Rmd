@@ -66,6 +66,7 @@ CI/CD Pipelines
 
 ### Guides / Resources
 - [Git the Simple Guide](http://rogerdudler.github.io/git-guide/)
+- [M&A Dev Docs](https://esgovcloud.com/mAndA/dev-docs/wiki)
 ]
 
 .column.center[

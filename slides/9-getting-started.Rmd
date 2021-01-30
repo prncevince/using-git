@@ -24,7 +24,7 @@ git add
 ```
 #### Commit Changes
 ```bash
-git commit -m "track files, first commit!"
+git commit -m "track files, first commit\!"
 ```
 #### Push to Remote Repo
 ```bash

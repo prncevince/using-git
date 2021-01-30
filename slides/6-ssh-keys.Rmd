@@ -20,7 +20,7 @@ macOS:<br>
 Windows:<br>
 \> `cat ~/.ssh/id_rsa.pub | clip`
 - Test connection<br>
-\> `ssh -T esgovcloud.com`
+\> `ssh -T git@esgovcloud.com`
 - Clone private repository<br>
 <code class="remark-inline-code x75">
 \> git clone git@esgovcloud.com:mAndA/clone-me.git
