@@ -1,4 +1,4 @@
 layout: true
 name: theme
 
-<p class="my-footer"><a href=""><span>by vincent clemson</span></a></p>
+<p class="my-footer"><a href="https://github.com/prncevince/using-git"><span>by vincent clemson</span></a></p>
