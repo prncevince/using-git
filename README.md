@@ -1,6 +1,6 @@
 # Version Control - Using Git
 
-A presentation to teach engineers how to use version control their code using Git.
+A presentation to teach engineers how to version control their code using Git.
 
 https://prncevince.github.io/using-git
 
