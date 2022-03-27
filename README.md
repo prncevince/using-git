@@ -1,10 +1,8 @@
 # Version Control - Using Git
 
-5th presentation in the Modernizing the M&A Workflow series.
+A presentation to teach engineers how to use version control their code using Git.
 
-https://esgovcloud.com/pages/mAndA/mod-mAndA-5-vc-git
-
-To collab & contribute to the presentation, see [CONTRIBUTING](CONTRIBUTING.md)
+https://prncevince.github.io/using-git
 
 ## Description
 
