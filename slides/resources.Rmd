@@ -24,7 +24,7 @@ macOS
 - [GitLab and SSH keys](https://docs.gitlab.com/ee/ssh/README.html)
 
 #### [Getting Started](#9)
-- [Demo Repo to Clone](https://esgovcloud.com/mAndA/clone-me)
+- [Demo Repo to Clone]()
 
 #### [R Project + RStudio + Git](#10)
 - [Using Projects in R / RStudio](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects)
@@ -60,13 +60,13 @@ CI/CD Pipelines
 - [GitLab CI/CD](https://docs.gitlab.com/ee/ci/), [GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions), [Jenkins](https://jenkins.io), [AWS Codepipeline](https://aws.amazon.com/codepipeline/), [Travis CI](https://travis-ci.org/)
 
 #### [Large Files](#28)
-- [AWS CLI Install / Config](https://esgovcloud.com/mAndA/dev-docs/wiki/AWS-CLI)
+- [AWS CLI Install / Config]()
 - [Git Large File Storage](https://git-lfs.github.com/)
 
 
 ### Guides / Resources
 - [Git the Simple Guide](http://rogerdudler.github.io/git-guide/)
-- [M&A Dev Docs](https://esgovcloud.com/mAndA/dev-docs/wiki)
+- [Dev Docs]()
 ]
 
 .column.center[
