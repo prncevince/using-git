@@ -1,6 +1,10 @@
-class: title-slide inverse
+class: title-slide inverse split-50
 
 <h1 class="title">Version Control - Using Git</h1>
+
+.row[.center.vbottom-0[
+for an overview - press 'o'
+]]
 
 <h3 class="author">vincent clemson</h3>
 
